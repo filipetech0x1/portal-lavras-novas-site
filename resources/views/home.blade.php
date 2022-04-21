@@ -41,7 +41,8 @@ main{
 }
 .nav-list{
     letter-spacing: 3px;
-    margin-left: 32px;
+    margin-left: 0px;
+    
 }
 .mobile-menu{
     display: none;
@@ -60,23 +61,54 @@ main{
         overflow-x: hidden;
     }
     .nav-list{
-        position: absolute;
+        position: fixed;
+        width: 250px;
         top: 8vh;
-        right: 0;
-        width: 35vw;
+        left:0;
+        width: 250px;
         height: 92vh;
         background:#054030;
+        z-index: 1111;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-250px);
     }
+    
     .nav-list li{
         margin-left: 0;
     }
     .mobile-menu{
         display: block;
+        position: absolute;
+        left: 0;      
+        data-side:"left";
+        padding: 0;
+        border: 0;
+        outline: none;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        
+    font-weight: 400;
+    color: #343a40;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: .9375rem;
+    line-height: 1.5;
+    border-radius: 0;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        
     }
     .nav-list.active {
         transform: translateX(0);
@@ -114,7 +146,7 @@ main{
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-            <section class="menu">
+            
                 <ul class="nav-list">
                     <li><a href="{{ route('cachoeiras')}}">Cachoeiras</a></li>
                     <li> <a href="{{ route('cultura')}}">Cultura</a></li>
@@ -122,7 +154,7 @@ main{
                     <li> <a href="{{ route('hospedagem')}}">Hospedagem</a></li>
                     <li><a href="{{ route('loja')}}">Loja</a></li>
                 </ul>
-            </section>
+
         </nav>
         
     </header>
