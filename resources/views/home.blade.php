@@ -53,8 +53,8 @@ main{
     height: 2px;
     background:#fff;
     margin:8px;
+    transition: 0.3s;
 }
-@media (max-width: 999px){
     
     body{
         overflow-x: hidden;
@@ -63,7 +63,7 @@ main{
         position: absolute;
         top: 8vh;
         right: 0;
-        width: 50vw;
+        width: 35vw;
         height: 92vh;
         background:#054030;
         flex-direction: column;
@@ -74,7 +74,6 @@ main{
     }
     .nav-list li{
         margin-left: 0;
-        opacity: 0;
     }
     .mobile-menu{
         display: block;
@@ -93,7 +92,16 @@ main{
             transform: translateX(0);
         }
     }
-}
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    .mobile-menu.active .line2 {
+        opacity: 0;
+    }
+    .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
     </style>
     <title>Portal Lavras Novas</title>
 </head>
@@ -131,8 +139,8 @@ main{
             this.handleClick = this.handleClick.bind(this);
         }
         animateLinks(){
-            this.navLinks.array.forEach(link => {
-                console.log(index);
+            Array.from(this.navLinks).forEach((link,index) => {
+                console.log(index / 7 + 0.3);
                 link.style.animation
                 ?(link.style.animation = "")
                 : (link.style.animation = `navLinkFade 0.5s ease forwards 0.3s`);
