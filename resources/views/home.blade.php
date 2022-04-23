@@ -18,9 +18,18 @@ a:hover{
     opacity: 0.7;
 }
 .logo{
+    display: flex;
+    position: fixed;
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    align-items: center;
+    justify-content: space-around;
+}
+#logotipo{
+    display: flex;
+    justify-content: space-around;
+   
 }
 nav{
     display: flex;
@@ -135,12 +144,16 @@ main{
     }
 
     </style>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Portal Lavras Novas</title>
 </head>
 <body>
     <header>
         <nav>
-            <a class="logo" href="">Portal Lavras Novas</a>
+        
+            <a class="logo" href="">
+                <img id="logotipo" src="favicon.ico" alt="logotipo">
+                 Portal Lavras Novas</a>
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -158,7 +171,9 @@ main{
         </nav>
         
     </header>
-    <main></main>
+    <main>
+        
+    </main>
     <script type="text/javascript">
     class MobileNavbar {
 
