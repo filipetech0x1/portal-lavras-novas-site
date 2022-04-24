@@ -19,7 +19,7 @@ a:hover{
 }
 .logo{
     display: flex;
-    position: fixed;
+    position: absolute;
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -38,7 +38,9 @@ nav{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #054030;
     height: 8vh;
+    
 }
+
 main{
     background: url() no repeat center center;
     background-size: cover;
@@ -142,7 +144,43 @@ main{
     .mobile-menu.active .line3 {
         transform: rotate(45deg) translate(-5px, -7px);
     }
+    .flex-img-background img{
+        position: relative;
+        justify-content: space-around;
+        width: 100%;
+        top: 20px;
+        max-width: none;
+        box-sizing: space;
+        box-align: center;
 
+    }
+   #img1{
+        width:303.33px;
+        height: 303.33px;
+    }
+    .flex-img-background-2{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+    .instagram2{
+        list-style: none;
+        position: relative;
+        display: flex;
+        top: 30px; 
+        vertical-align: middle;
+        justify-content: space-around;
+    }
+    #insta{
+        width: 150px;
+    }
+    #insta-texto{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        height: 25px;
+        justify-content: space-around;
+        position: relative;
+    }
+    
     </style>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Portal Lavras Novas</title>
@@ -172,7 +210,34 @@ main{
         
     </header>
     <main>
-        
+            <div class="flex-img-background">
+                <ul class="flex-img-background-2">
+                    <li>
+                        <img id="img1"src="274680083_327214869453138_9109901798273709052_n.webp" alt="img1">
+                    </li>
+
+                    <li>
+                        <img id="img1" src="83538188_262236941788814_6189941727305750453_n.jpg"  alt="img2">
+                    </li>
+
+                    <li>
+                        <img id="img1" src="118969382_2413339495633369_8304343864662400586_n.jpg"  alt="img2">
+                    </li>
+                </ul>                          
+            </div>
+
+            <div class="instagram">
+                <ul class="instagram2">
+                    <li>
+                        <h4 id="insta-texto">Siga nosso Instagram</h4>
+                        <a href="https://www.instagram.com/portalavrasnovas/" target="_blank">
+                            <img id="insta" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white
+                            " target="_blank">
+                        </a>
+                    </li>
+                </ul> 
+            </div>
+            
     </main>
     <script type="text/javascript">
     class MobileNavbar {
