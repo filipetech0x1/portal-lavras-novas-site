@@ -45,6 +45,7 @@ main{
     background: url() no repeat center center;
     background-size: cover;
     height:92vh;
+    background:#D6D58E;
 }
 .nav-list{
     list-style: none;
@@ -72,7 +73,7 @@ main{
         overflow-x: hidden;
     }
     .nav-list{
-        position: fixed;
+        position: absolute;
         width: 250px;
         top: 8vh;
         left:0;
@@ -170,9 +171,11 @@ main{
         top: 30px; 
         vertical-align: middle;
         justify-content: space-around;
+        padding: 10px;
     }
     #insta{
         width: 150px;
+
     }
     #insta-texto{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -180,7 +183,93 @@ main{
         justify-content: space-around;
         position: relative;
     }
+    .servicos{
+        position: relative;
+        vertical-align: middle;
+        justify-content: space-around;
+        width: 100%;
+        height: 230px;
+        background:rgb(230, 230, 230);
+        top: 50px;
+    }
+    .serv-encontra{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        position: relative;
+        vertical-align: middle;
+        text-align: center;
+        top: 50px;
+        position: relative;
+        justify-content: space-around;
+        display: flex;
+    }
+    .serv-encontra li{
+        list-style: none;
+        top: 50px;
+        padding: 10px;
+        
+    }
+    .serv-nao-encontra{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        position: relative;
+        top: 150px;
+    }    
+    #pousada{
+        
+        width:100px;
+        height:80px;
+    }
+    #restaurante{
+        width:80px;
+        height:80px;
+    }
+    #serv-title{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        position: relative;
+        vertical-align: middle;
+        text-align: center;
+        top: 30px;
+    }
+    .historia{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+        left: 30px;
+        top: 30px;
+    }
+    #apresentacao{
+    font-size: 18px;
+    line-height: 34px;
+    padding: 20px;
+    color: #000000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-rendering: optimizeLegibility;
+    margin: 15px 0;
+    margin-bottom: 0.9rem;
+    }
+    #title-apresentacao{
+        padding: 20px;
+        position: relative;
+        top: 20px;
+    }
+    #title-lavras-hoje{
+        padding: 20px;
+        position: relative;
+        top: 40px;
+    }
+    .lavras-hoje{
+    color: #000000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    height: 400px;
+
+    }
     
+    .rodape{
+        background: #000000;
+        width: 100%;
+        height: 300px;
+    }
     </style>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Portal Lavras Novas</title>
@@ -237,8 +326,68 @@ main{
                     </li>
                 </ul> 
             </div>
+
+            <div class="historia">
+                <h2 id="title-apresentacao">Lavras Novas</h2>
+                <p id="apresentacao">Lavras Novas distrito de Ouro Preto - MG e a 120 km da capital mineira Belo Horizonte possui casas antigas e coloridas, igrejas coloniais e restaurantes. É cercada de montanhas de uma vegetação incrível, que dão um charme especial.É um lugar muito gostoso e acolhedor com seus visitantes, de culinária local e muita história envolvida em todos detalhes, lugar de natureza exuberante, você pode fazer passeio off-road, caminhar na natueza, renovar as energias em suas cachoeiras maravilhosas, escutar uma boa música ao vivo tomando uma cerveja e comendo uma comida típica, em Lavras Novas temos opções para todos os gostos.</p>
+            </div>
+
+            <div class="lavras-hoje">
+                <h2 id="title-lavras-hoje">Lavras Novas hoje</h2>
+
+            </div>
+
+            <div class="servicos">
+                <h2 id="serv-title">Serviços em Lavras Novas</h2> 
+                <ul class="serv-encontra"> 
+                    <li>
+                        <img id="pousada"src="https://media-public.canva.com/oPtBg/MAA9p8oPtBg/4/t.png" alt="">
+                        <h3>POUSADAS</h3>
+                    </li>
+                    <li>
+                        <svg id="restaurante" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" version="1.0" viewBox="83.5 94.0 258.1 225.8" zoomAndPan="magnify" style="fill: rgb(0, 0, 0);" role="img" aria-label="Dish Fork and Knife Restaurant Travel"><g id="__id12_sg7ng2xese" style="fill: rgb(13, 13, 13);"><path d="M217.65,121.86c-54.55,0-98.77,44.22-98.77,98.77s44.22,98.77,98.77,98.77s98.77-44.22,98.77-98.77 S272.19,121.86,217.65,121.86z M217.65,298.92c-43.24,0-78.3-35.06-78.3-78.3s35.06-78.3,78.3-78.3c43.24,0,78.3,35.06,78.3,78.3 S260.89,298.92,217.65,298.92z" style="fill: inherit;"></path><circle cx="217.65" cy="220.62" r="69.15" style="fill: inherit;"></circle><path d="M329.89,115.23c-12.36,22.2-12.07,44.03-2.95,72.22c0,0,4.08,13.31,1.06,24.47 c-0.77,2.84-1.06,5.79-1.06,8.73l-0.01,91.37c0,4.3,3.74,7.78,8.13,7.33c3.82-0.39,6.61-3.84,6.61-7.68l0-73.35l0.01-23.12 l-0.01-99.96C341.69,115.23,341.69,94.04,329.89,115.23z" style="fill: inherit;"></path><path d="M115.43,116.14h-0.41c-1.91,0-3.45,39.67-3.45,39.67c0,1.66-1.22,3.07-2.86,3.31 c-2.01,0.29-3.82-1.27-3.82-3.31c0,0-1.55-39.67-3.45-39.67h-0.46c-1.91,0-3.45,39.7-3.45,39.7c0,2.02-1.79,3.58-3.79,3.31 l-0.41-0.06c-1.65-0.23-2.89-1.64-2.89-3.31c0,0-1.55-39.65-3.45-39.65c-1.91,0-3.45,43.25-3.45,43.25 c0,5.4,1.19,13.72,7.05,18.55c3.49,2.88,4.3,6.02,4.37,7.33v126.74c0,4.05,3.32,7.37,7.37,7.37c4.05,0,7.37-3.32,7.37-7.37V185.81 h0.01c-0.02-0.28,0-0.53-0.01-0.8v-0.9c0.17-3.56,1.63-5.58,3.22-6.91c6-5,6-12.82,6-17.76 C118.88,159.44,117.34,116.14,115.43,116.14z" style="fill: inherit;"></path></g></svg>
+                        <h3>RESTAURANTES</h3>
+                    </li>
+                    <li>
+                        <img id="restaurante" src="https://media-public.canva.com/6bFs4/MAEF3a6bFs4/1/t.png" alt="">
+                        <h3>BARES</h3>
+                    </li>
+                    <li>
+                        <img id="restaurante" src="https://media-public.canva.com/LWFps/MAEGudLWFps/1/t.png" alt="">
+                        <h3>PASSEIOS OFF-ROAD</h3>
+                    </li>
+                    <li>
+                        <img id="restaurante" src="https://media-public.canva.com/IiaZY/MAD2UQIiaZY/1/t.png" alt="">
+                        <h3>TIROLESA</h3>
+                    </li>
+                    <li>
+                        <img id="restaurante" src="https://media-public.canva.com/V-ItE/MAEqn2V-ItE/1/t.png" alt="">
+                        <h3>GUIA TURÍSTICO</h3>
+                    </li>
+                    <li>
+                        <img id="restaurante" src="https://media-public.canva.com/MAeWQ/MAEjsMMAeWQ/2/t.png" alt="">
+                        <h3>ECOTURISMO</h3>
+                    </li>
+                    
+                   
+                </ul>
+
+                <ul class="serv-nao-encontra">
+                    
+                </ul>
+            </div>
+
+            
+
+        <footer>
+                <div class="rodape">
+                    
+                </div>   
+        </footer>
             
     </main>
+    
+
     <script type="text/javascript">
     class MobileNavbar {
 
