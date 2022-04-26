@@ -23,7 +23,7 @@ Route::get('/', function () {
 
 Route::view('/', 'home' )->name('home');
 
-/*Route::view('/home', 'home' )->name('home');*/
+/*Route::view('/home', 'home' )->name('home');*/    
 
 Route::view('/loja', 'loja' )->name('loja');
 
