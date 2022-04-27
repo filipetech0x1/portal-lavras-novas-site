@@ -368,6 +368,10 @@ main{
         
         
     }
+    #icone-servico{
+        width: 100px;
+        height: 80px;
+    }
 
     </style>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -442,31 +446,31 @@ main{
                 <h2 id="serv-title">Serviços em Lavras Novas</h2> 
                 <ul class="serv-encontra"> 
                     <li>
-                       
+                       <img id="icone-servico" src="noun-inn-4766543.png" alt="">
                         <h3>POUSADAS</h3>
                     </li>
                     <li>
-                        
+                        <img id="icone-servico" src="noun-restaurant-3381726.png" alt="">
                         <h3>RESTAURANTES</h3>
                     </li>
                     <li>
-                        
+                        <img id="icone-servico" src="noun-beers-1159050.png" alt="">
                         <h3>BARES</h3>
                     </li>
                     <li>
-                        
+                        <img id="icone-servico" src="noun-off-road-3480756.png" alt="">
                         <h3>PASSEIOS OFF-ROAD</h3>
                     </li>
                     <li>
-                        
+                        <img id="icone-servico" src="noun-zipline-3268401.png" alt="">
                         <h3>TIROLESA</h3>
                     </li>
                     <li>
-                        
+                        <img id="icone-servico" src="noun-tourist-guide-4249416.png" alt="">
                         <h3>GUIA TURÍSTICO</h3>
                     </li>
                     <li>
-                       
+                        <img id="icone-servico" src="noun-ecotourism-4441702.png" alt="">
                         <h3>ECOTURISMO</h3>
                     </li>
                     
@@ -476,18 +480,22 @@ main{
                 <ul class="serv-nao-encontra">
                     
                     <li>
+                        <img id="icone-servico"  src="noun-drugstore-4786256.png" alt="">
                         <h3> DROGARIA</h3>
                     </li>
 
                     <li>
+                        <img id="icone-servico"  src="noun-gas-station-4780975.png" alt="">
                         <h3> POSTO </h3>
                     </li>
 
                     <li>
+                        <img id="icone-servico"  src="noun-hospital-4787144.png" alt="">
                         <h3> HOSPITAL </h3>
                     </li>
 
                     <li>
+                        <img id="icone-servico" src="noun-taxi-101917.png" alt="">
                         <h3> TAXI </h3>
                     </li>
                 </ul>

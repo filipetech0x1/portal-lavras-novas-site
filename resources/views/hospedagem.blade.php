@@ -154,28 +154,84 @@
     }
     .rodape li{
         background: #000000;
-        width: 100%;
+    }
+    .redes-rodape {
+        display:flex;
+        position: relative;
+        
+        
     }
     #text-rod{
         color: #fff;
         font-size: 18px;
         line-height: 34px;
-        padding: 20px;
+        padding: 5px;
         top: 100px;
         position: relative;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-rendering: optimizeLegibility;
-    background:#000000;
+   
     
 
     }
+    #text-rod2{
+        line-height: 34px;
+        padding: 1px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        max-width: none;
+        box-sizing: space;
+        box-align: center;
+        
+    }
     .footer{
-        background:#000000;
+        
         position: relative;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 18px;
         line-height: 34px;
         padding: 20px;
+    }
+    #li-rod{
+     
+        padding: 10px;
+        top: 100px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        max-width: none;
+        box-sizing: space;
+        box-align: center;
+        
+        
+    }
+    .rodape3{
+        display: flex;
+        
+    }
+    .rodape-logo{
+        position: relative;
+        left: 550px;
+        padding: 5px;
+        display: flex;
+        
+       
+    }
+    .rodape-logo2 li{
+        list-style: none;
+       
+    }   
+    #rodape-logo3{
+        height: 400px;
+        position: absolute;
+        justify-content: space-around;
+        left: 80px;
+        margin-top: -221px;
+        
+        
     }
             </style>
     <title>Hospedagem</title>
@@ -208,15 +264,29 @@
         <footer>
             <div class="rodape">
                 <h3 id="text-rod">Portal Lavras Novas</h3>
-    
-                <ul>
-                    <li><h4 id="text-rod">Assuntos relacionados ao site</h4></li>
-                    <li><a  href="mailto:filipetech01@gmail.com" target="_blank"><img id="text-rod" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt=""></a></li> 
-                    <li><p id="text-rod">filipetech01@gmail.com</p></li>
-                    
+                <h4 id="text-rod">Assuntos relacionados ao site:</h4>
+                <ul class="rodape2">
+                    <ul class="rodape3">
+                    <li id="li-rod">
+                        <a href="mailto:/*emaildoportal*/" target="_blank">
+                            <img id="text-rod2" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="">
+                        </a>
+                    </li>
+                    <li  id="li-rod">
+                        <a href="https://www.instagram.com/portalavrasnovas/" target="_blank">
+                            <img id="text-rod2" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white
+                            " target="_blank">
+                        </a>
+                    </li>
+                    </ul>
+                    <li><p id="text-rod">Idealizador - joaopedroartes07@gmail.com <br>Desenvolvido por filipetech01 - filipetech01@gmail.com</p></li>
     
                 </ul>
-           </div>  
+                <div class="rodape-logo">
+                            <img  id="rodape-logo3" src="logo-rodape.png" alt="">
+                </div>
+           </div> 
+             
            </footer>
     </main>
 
