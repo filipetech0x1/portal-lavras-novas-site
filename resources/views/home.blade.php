@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
+    
     <style>
 *{
     margin: 0;
@@ -372,7 +373,41 @@ main{
         width: 100px;
         height: 80px;
     }
+    .card-border{
+        position: relative;
+        border-width: 2px;
+        border-height:2px;
+        border-style:solid;
+        border-color: #000000;
+        width: 24rem;
+        box-shadow:  5px 5px rgba(9, 7, 31, 0.548);
 
+        
+    }
+    .card-header-border{
+        border-bottom-width: 2px;
+        border-bottom-height:2px;
+        border-bottom-style:solid;
+        padding: 10px;
+    }
+    .card-footer-border{
+        border-top-width: 2px;
+        border-top-height:2px;
+        border-top-style:solid;
+        padding: 10px;
+        text-align: center;
+    }
+    .container-fluid{
+        padding: 0;
+        margin: 0; 
+        display:flex; 
+        justify-content: center;
+        text-align: center;
+    }
+    .card-body-text{
+        text-align: center;
+        
+    }
     </style>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Portal Lavras Novas</title>
@@ -436,12 +471,22 @@ main{
                 <h2 id="title-apresentacao">Lavras Novas</h2>
                 <p id="apresentacao">Lavras Novas distrito de Ouro Preto - MG e a 120 km da capital mineira Belo Horizonte possui casas antigas e coloridas, igrejas coloniais e restaurantes. É cercada de montanhas de uma vegetação incrível, que dão um charme especial.É um lugar muito gostoso e acolhedor com seus visitantes, de culinária local e muita história envolvida em todos detalhes, lugar de natureza exuberante, você pode fazer passeio off-road, caminhar na natueza, renovar as energias em suas cachoeiras maravilhosas, escutar uma boa música ao vivo tomando uma cerveja e comendo uma comida típica, em Lavras Novas temos opções para todos os gostos.</p>
             </div>
-
+            
             <div class="lavras-hoje">
                 <h2 id="title-lavras-hoje">Lavras Novas hoje</h2>
 
-            </div>
+                <div class="container-fluid">
 
+                    <div class="card-border">
+                    <div class="card-header-border">TEMPO E TEMPERATURA</div>
+                    <div class="card-body" >
+                        <div class="city">Lavras Novas - MG</div>
+
+                        </div>
+                 </div>
+
+                </div>
+          
             <div class="servicos">
                 <h2 id="serv-title">Serviços em Lavras Novas</h2> 
                 <ul class="serv-encontra"> 
@@ -535,6 +580,24 @@ main{
             
     </main>
     
+    <script type="text/javascript">
+    //https://api.openweathermap.org/data/2.5/weather?lat=-20.46280125&lon=-43.52637183940418&appid=0259ee4de878b5ef5b8fa1ed05dd3cff&units=metric&lang=pt_br
+
+    //http://apiadvisor.climatempo.com.br/api/v1/weather/locale/3477/current?token=39c87a7e35a6653d2a65b221e7c1d361
+
+    const url = 'http://dataservice.accuweather.com/currentconditions/v1/1339430?apikey=sF4lnGwbs2oSvmJnW6SFUeG9rvGpELdH&language=pt-br';
+
+    
+    let response = fetch(url);
+
+    fetch(url)
+    .then(response => response.json())
+    .then(data => console.log(data));
+
+    
+   
+
+    </script>
 
     <script type="text/javascript">
     class MobileNavbar {
