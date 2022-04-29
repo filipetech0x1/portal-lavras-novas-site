@@ -381,6 +381,7 @@ main{
         border-color: #000000;
         width: 24rem;
         box-shadow:  5px 5px rgba(9, 7, 31, 0.548);
+        box-sizing: border-box;
 
         
     }
@@ -389,6 +390,7 @@ main{
         border-bottom-height:2px;
         border-bottom-style:solid;
         padding: 10px;
+        box-sizing: border-box;
     }
     .card-footer-border{
         border-top-width: 2px;
@@ -396,6 +398,7 @@ main{
         border-top-style:solid;
         padding: 10px;
         text-align: center;
+        box-sizing: border-box;
     }
     .container-fluid{
         padding: 0;
@@ -403,11 +406,47 @@ main{
         display:flex; 
         justify-content: center;
         text-align: center;
+        max-width: 400px;
     }
     .card-body-text{
         text-align: center;
         
+        
     }
+
+    .city, .temperature{
+    height: 10vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temperature{
+    flex-direction: column;
+}
+
+.degree-section{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.degree-section span{
+    margin: 10px;
+    font-size: 30px;
+}
+
+.degree-section h2{
+    font-size: 40px;
+}
+.icon{
+    position: relative;
+    top: -50px;
+    border-radius: 50%;
+    width: 50px;
+    margin-bottom: -50px;
+}
     </style>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Portal Lavras Novas</title>
@@ -479,10 +518,39 @@ main{
 
                     <div class="card-border">
                     <div class="card-header-border">TEMPO E TEMPERATURA</div>
-                    <div class="card-body" >
-                        <div class="city">Lavras Novas - MG</div>
+                    <div class="card-body">
+                        
+                    <div>
+                            <div class="card">
 
+                                <img src="day.svg" class="time card-img">
+
+                            </div>
+
+                        <div class="card-center">
+
+                            <div class="card-icon">
+                               
+                                <img src="1.svg" alt="">
+
+                            </div>
                         </div>
+
+                            <div class="city">Lavras Novas - MG</div>
+                            <div>
+                                <canvas class="icon" width="128" height="128"></canvas>
+                            </div>
+                            <div class="temperature">
+                                <div class="degree-section">
+                                    <h2 class="temperature-degree"></h2>
+                                    <span class="unit"></span>
+                                </div>
+                                <div class="temperature-description"></div>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
                  </div>
 
                 </div>
@@ -581,25 +649,114 @@ main{
     </main>
     
     <script type="text/javascript">
+    //Script do TEMṔO E TEMPERATURA//
+
     //https://api.openweathermap.org/data/2.5/weather?lat=-20.46280125&lon=-43.52637183940418&appid=0259ee4de878b5ef5b8fa1ed05dd3cff&units=metric&lang=pt_br
 
     //http://apiadvisor.climatempo.com.br/api/v1/weather/locale/3477/current?token=39c87a7e35a6653d2a65b221e7c1d361
 
+    
+
+    window.addEventListener('load', ()=>{
+    
     const url = 'http://dataservice.accuweather.com/currentconditions/v1/1339430?apikey=sF4lnGwbs2oSvmJnW6SFUeG9rvGpELdH&language=pt-br';
 
     
     let response = fetch(url);
 
+    let temperatureDiscription = document.querySelector('.temperature-description')
+    let temperatureDegree = document.querySelector('.temperature-degree')
+    let temperature = document.querySelector('.temperature')
+    let unit = document.querySelector('.unit')
+    let icon = document.querySelector('.icon')
+    let card = document.querySelector('.card')
+    let timeimg = document.querySelector('img.time')
+
+
     fetch(url)
     .then(response => response.json())
-    .then(data => console.log(data));
+    .then(data => {
+        const {Temperature, WeatherText} = data[0]
+           temperatureDegree.textContent = Temperature.Metric.Value
+           unit.innerText = 'ºC'
+           temperatureDiscription.innerText = WeatherText })
+          
+    })
 
-    
-   
+    //Dia e noite - icon e img
+    if(card.classList.contains('d-none'))
+    {
+        card.classList.remove('d-none')
+    }
 
+    const imgIcon= `${weather.WeatherIcon}.svg`
+    icon.setAttribute('src',imgIcon)
+
+    var timeSrc
+    if(weather.IsDayTime)
+    {
+        updateColor('day')
+
+    }else{
+        
+        updateColor('night')
+    }
+
+
+function updateColor(time){
+    window.scrollTo(0,document.body.scrollHeight);
+    if(time==='day'){
+        timeSrc='day.svg'
+        timeimg.setAttribute('src', timeSrc)
+        document.body.style.backgroundColor = "#e6ecf6"
+        if(h1text.classList.contains('text-light') /*&& input.classList.contains('text-light')*/)
+        {
+            console.log('day-here')
+            h1text.classList.remove('text-light')
+            //input.classList.remove('text-light')
+            details.classList.remove('text-light')
+            h1text.classList.add('text-dark')
+            //input.classList.add('text-dark')
+            details.classList.add('text-muted')
+            card.style.backgroundColor= "white"
+        }
+        else
+        {
+            console.log('day-not here')
+        }
+    }
+    else{
+        timeSrc='night.svg'
+        timeimg.setAttribute('src', timeSrc)
+        document.body.style.backgroundColor = "#0e2432";
+        if(h1text.classList.contains('text-dark')/*&&input.classList.contains('text-dark')*/)
+        {
+            console.log('night-here')
+            h1text.classList.remove('text-dark')
+           // input.classList.remove('text-dark')
+            details.classList.remove('text-muted')
+            h1text.classList.add('text-light')
+           // input.classList.add('text-light')
+            details.classList.add('text-light')
+            card.style.backgroundColor= "#081d27"
+        }
+        else{
+            console.log('night-not here')
+        }
+    }
+}
     </script>
 
+
+
     <script type="text/javascript">
+    
+    </script>
+    
+
+
+    <script type="text/javascript">
+    //Script do botão HOME//
     class MobileNavbar {
 
         constructor(mobileMenu, navList, navLinks){
