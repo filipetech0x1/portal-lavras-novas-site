@@ -172,17 +172,19 @@ main{
         top: 30px; 
         vertical-align: middle;
         justify-content: space-around;
-        padding: 10px;
+        padding: 40px;
     }
     #insta{
         width: 150px;
 
     }
     #insta-texto{
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        height: 25px;
+        font-family:sans-serif;
+        height: 30px;
         justify-content: space-around;
         position: relative;
+        font-size: 20px;
+        align-items: center;
     }
     .servicos{
         position: relative;
@@ -374,16 +376,11 @@ main{
         height: 80px;
     }
     .card-border{
-        position: relative;
         border-width: 2px;
-        border-height:2px;
         border-style:solid;
         border-color: #000000;
-        width: 24rem;
-        box-shadow:  5px 5px rgba(9, 7, 31, 0.548);
-        box-sizing: border-box;
-
-        
+        width: 20rem;
+        height: 15rem;
     }
     .card-header-border{
         border-bottom-width: 2px;
@@ -400,26 +397,33 @@ main{
         text-align: center;
         box-sizing: border-box;
     }
+    .temperature-description{
+        padding: 5px;
+    }
     .container-fluid{
-        padding: 0;
-        margin: 0; 
+       
         display:flex; 
         justify-content: center;
         text-align: center;
+        height: 300px;
+        width: 100%;
+        position: relative;
+        top: 60px;
         max-width: 400px;
     }
     .card-body-text{
         text-align: center;
-        
-        
     }
 
     .city, .temperature{
     height: 10vh;
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
+    padding: 5px;
+
 }
 
 .temperature{
@@ -440,14 +444,64 @@ main{
 .degree-section h2{
     font-size: 40px;
 }
-.icon{
+.card-icon{
+    width: 10px;
+    height: 10px;
     position: relative;
-    top: -50px;
-    border-radius: 50%;
-    width: 50px;
-    margin-bottom: -50px;
+    align-items: center;
+}
+.card-paginas{
+    font-family: "Poppins", sans-serif;
+    background-color: #fafafa;
+}
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.card1 {
+  border-radius: 5px;
+  box-shadow: 7px 7px 0px rgba(50, 50, 50, 0.22);
+  padding: 20px;
+  margin: 20px;
+  width: 400px;
+  transition: all 0.3s ease-out;
+}
+
+.card1:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+ 
+.card1 p {
+  color: #a3a5ae;
+  font-size: 16px;
+}
+ 
+.image {
+  float: right;
+  max-width: 64px;
+  max-height: 64px;
+}
+.blue {
+  border-left: 3px solid #4895ff;
+}
+ 
+.green {
+  border-left: 3px solid #3bb54a;
+}
+ 
+.red {
+  border-left: 3px solid #b3404a;
+}
+.orange{
+    border-left: 3px solid #e66801ea;
 }
     </style>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
+    rel="stylesheet" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Portal Lavras Novas</title>
 </head>
@@ -497,18 +551,55 @@ main{
             <div class="instagram">
                 <ul class="instagram2">
                     <li>
-                        <h4 id="insta-texto">Siga nosso Instagram</h4>
+                        <h4 id="insta-texto">Siga no Instagram</h4>
                         <a href="https://www.instagram.com/portalavrasnovas/" target="_blank">
-                            <img id="insta" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white
-                            " target="_blank">
+                            <img id="insta" src="noun-instagram-like-1809985.png" target="_blank">
                         </a>
                     </li>
                 </ul> 
             </div>
 
+            <div class="card-paginas">
+                <div class="row">
+
+                    <div class="card1 green">
+                      <h2>Cachoeiras</h2>
+                      <a href="{{ route('cachoeiras')}}" >
+                      <p>Confira as melhores cachoeiras</p>
+                      <img class="image" src="noun-waterfall-2045578.png" alt="" />
+                    </a>
+                    </div>
+               
+                    <div class="card1 blue">
+                      <h2>Cultura</h2>
+                      <a href="{{ route('cultura')}}" >
+                      <p>Conheça sobre a cultura local</p>
+                      <img class="image" src="noun-building-2872558.png" alt="" />
+                        </a>
+                    </div>
+               
+                    <div class="card1 red">
+                      <h2>Gastronomia</h2>
+                      <a href="{{ route('gastronomia')}}" >
+                      <p>Conheça sobre a gastronomia local</p>
+                      <img class="image" src="noun-jar-4782011.png" alt="" />
+                    </a>
+                    </div>
+
+                    <div class="card1 orange">
+                        <h2>Hospedagem</h2>
+                        <a href="{{ route('hospedagem')}}" >
+                        <p>Confira as opções de hospedagem</p>
+                        <img class="image" src="noun-accommodation-4578364.png" alt="" />
+                        </a>
+                      </div>
+                  </div>
+              
+            </div>
+
             <div class="historia">
                 <h2 id="title-apresentacao">Lavras Novas</h2>
-                <p id="apresentacao">Lavras Novas distrito de Ouro Preto - MG e a 120 km da capital mineira Belo Horizonte possui casas antigas e coloridas, igrejas coloniais e restaurantes. É cercada de montanhas de uma vegetação incrível, que dão um charme especial.É um lugar muito gostoso e acolhedor com seus visitantes, de culinária local e muita história envolvida em todos detalhes, lugar de natureza exuberante, você pode fazer passeio off-road, caminhar na natueza, renovar as energias em suas cachoeiras maravilhosas, escutar uma boa música ao vivo tomando uma cerveja e comendo uma comida típica, em Lavras Novas temos opções para todos os gostos.</p>
+                <p id="apresentacao">Lavras Novas distrito de Ouro Preto - MG e a 120 km da capital mineira Belo Horizonte possui casas antigas e coloridas, igrejas coloniais e restaurantes. É cercada de montanhas de uma vegetação incrível, que dão um charme especial. É um lugar muito gostoso e acolhedor com seus visitantes, de culinária local e muita história envolvida em todos detalhes, lugar de natureza exuberante, você pode fazer passeio off-road, caminhar na natueza, renovar as energias em suas cachoeiras maravilhosas, escutar uma boa música ao vivo tomando uma cerveja e comendo uma comida típica, em Lavras Novas temos opções para todos os gostos.</p>
             </div>
             
             <div class="lavras-hoje">
@@ -517,43 +608,32 @@ main{
                 <div class="container-fluid">
 
                     <div class="card-border">
-                    <div class="card-header-border">TEMPO E TEMPERATURA</div>
+                        <div class="card-header-border">
+                        TEMPO E TEMPERATURA
+                        </div>
                     <div class="card-body">
                         
-                    <div>
-                            <div class="card">
-
-                                <img src="day.svg" class="time card-img">
-
-                            </div>
-
-                        <div class="card-center">
-
+                         <div class="display-card">
                             <div class="card-icon">
-                               
                                 <img src="1.svg" alt="">
-
                             </div>
-                        </div>
 
                             <div class="city">Lavras Novas - MG</div>
-                            <div>
-                                <canvas class="icon" width="128" height="128"></canvas>
-                            </div>
+                        
                             <div class="temperature">
                                 <div class="degree-section">
                                     <h2 class="temperature-degree"></h2>
                                     <span class="unit"></span>
                                 </div>
-                                <div class="temperature-description"></div>
+                                
                             </div>
-
-                            </div>
+                            <div class="temperature-description"></div>
+                            
                         </div>
                     </div>
                  </div>
 
-                </div>
+            </div>
           
             <div class="servicos">
                 <h2 id="serv-title">Serviços em Lavras Novas</h2> 
@@ -669,8 +749,7 @@ main{
     let temperature = document.querySelector('.temperature')
     let unit = document.querySelector('.unit')
     let icon = document.querySelector('.icon')
-    let card = document.querySelector('.card')
-    let timeimg = document.querySelector('img.time')
+   
 
 
     fetch(url)
@@ -679,80 +758,10 @@ main{
         const {Temperature, WeatherText} = data[0]
            temperatureDegree.textContent = Temperature.Metric.Value
            unit.innerText = 'ºC'
-           temperatureDiscription.innerText = WeatherText })
-          
+           temperatureDiscription.innerText = WeatherText })          
     })
 
-    //Dia e noite - icon e img
-    if(card.classList.contains('d-none'))
-    {
-        card.classList.remove('d-none')
-    }
-
-    const imgIcon= `${weather.WeatherIcon}.svg`
-    icon.setAttribute('src',imgIcon)
-
-    var timeSrc
-    if(weather.IsDayTime)
-    {
-        updateColor('day')
-
-    }else{
-        
-        updateColor('night')
-    }
-
-
-function updateColor(time){
-    window.scrollTo(0,document.body.scrollHeight);
-    if(time==='day'){
-        timeSrc='day.svg'
-        timeimg.setAttribute('src', timeSrc)
-        document.body.style.backgroundColor = "#e6ecf6"
-        if(h1text.classList.contains('text-light') /*&& input.classList.contains('text-light')*/)
-        {
-            console.log('day-here')
-            h1text.classList.remove('text-light')
-            //input.classList.remove('text-light')
-            details.classList.remove('text-light')
-            h1text.classList.add('text-dark')
-            //input.classList.add('text-dark')
-            details.classList.add('text-muted')
-            card.style.backgroundColor= "white"
-        }
-        else
-        {
-            console.log('day-not here')
-        }
-    }
-    else{
-        timeSrc='night.svg'
-        timeimg.setAttribute('src', timeSrc)
-        document.body.style.backgroundColor = "#0e2432";
-        if(h1text.classList.contains('text-dark')/*&&input.classList.contains('text-dark')*/)
-        {
-            console.log('night-here')
-            h1text.classList.remove('text-dark')
-           // input.classList.remove('text-dark')
-            details.classList.remove('text-muted')
-            h1text.classList.add('text-light')
-           // input.classList.add('text-light')
-            details.classList.add('text-light')
-            card.style.backgroundColor= "#081d27"
-        }
-        else{
-            console.log('night-not here')
-        }
-    }
-}
     </script>
-
-
-
-    <script type="text/javascript">
-    
-    </script>
-    
 
 
     <script type="text/javascript">
