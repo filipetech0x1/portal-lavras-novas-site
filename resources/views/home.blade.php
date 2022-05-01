@@ -139,13 +139,67 @@ main{
             transform: translateX(0);
         }
     }
-    .mobile-menu.active .line1 {
+    .line1{
+
+    }
+    .line2{
+
+    }
+    .line3{
+
+    }
+    #checkbox-menu{
+  position: absolute;
+  opacity: 0;
+    }
+    label{
+  cursor: pointer;
+  display: block;
+  height: 22px;
+  width: 30px;
+}
+label span{
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 30px;
+  background: #ffffff;
+  transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1){
+  top: 0;
+}
+
+label span:nth-child(2){
+  top: 8px;
+}
+
+label span:nth-child(3){
+  top: 16px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1){
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2){
+  opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3){
+  transform: rotate(45deg);
+  top:8px;
+}
+    .mobile-menu.active  {
         transform: rotate(-45deg) translate(-8px, 8px);
     }
-    .mobile-menu.active .line2 {
+    .mobile-menu.active  {
         opacity: 0;
     }
-    .mobile-menu.active .line3 {
+    .mobile-menu.active  {
         transform: rotate(45deg) translate(-5px, -7px);
     }
     .flex-img-background img{
@@ -520,10 +574,16 @@ main{
             <a class="logo" href="{{ route('home')}}">
                 <img id="logotipo" src="favicon.ico" alt="logotipo">
                  Portal Lavras Novas</a>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+
+            <div class="container">
+                <input type="checkbox" id="checkbox-menu">
+                <label for="checkbox-menu">
+                <div class="mobile-menu">
+                    <span> </span> 
+                    <span> </span>
+                    <span> </span>
+                </div>
+                </label>
             </div>
             
                 <ul class="nav-list">
@@ -545,17 +605,7 @@ main{
             <img src="" alt="">
            </div>
 
-            <h2 id="insta-texto">Clique aqui e nos siga no Instagram</h2>
-           
-            <div class="instagram">
-                <ul class="instagram2">
-                    <li>   
-                        <a href="https://www.instagram.com/portalavrasnovas/" target="_blank">
-                            <img id="insta" src="noun-instagram-like-1809985.png" target="_blank">
-                        </a>
-                    </li>
-                </ul> 
-            </div>
+
 
             <div class="card-paginas">
                 <div class="row">
