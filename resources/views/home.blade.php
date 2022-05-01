@@ -43,9 +43,11 @@ nav{
 }
 
 main{
-    background: url() no repeat center center;
+    overflow-y: scroll;
     background-size: cover;
     height:92vh;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
     
 }
 .nav-list{
@@ -156,15 +158,7 @@ main{
         box-align: center;
 
     }
-   #img1{
-        width:303.33px;
-        height: 303.33px;
-    }
-    .flex-img-background-2{
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-    }
+   
     .instagram2{
         list-style: none;
         position: relative;
@@ -508,6 +502,9 @@ main{
 .orange{
     border-left: 3px solid #e66801ea;
 }
+.fotos-background{
+    
+}
     </style>
     <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
@@ -542,22 +539,12 @@ main{
         </header>
 
     <main>
-            <div class="flex-img-background">
-                <ul class="flex-img-background-2">
-                    <li>
-                        <img id="img1"src="274680083_327214869453138_9109901798273709052_n.webp" alt="img1">
-                    </li>
+            
 
-                    <li>
-                        <img id="img1" src="83538188_262236941788814_6189941727305750453_n.jpg"  alt="img2">
-                    </li>
+           <div class="fotos-background">
+            <img src="" alt="">
+           </div>
 
-                    <li>
-                        <img id="img1" src="118969382_2413339495633369_8304343864662400586_n.jpg"  alt="img2">
-                    </li>
-                </ul>                          
-            </div>
-           
             <h2 id="insta-texto">Clique aqui e nos siga no Instagram</h2>
            
             <div class="instagram">
