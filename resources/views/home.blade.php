@@ -174,6 +174,12 @@ main{
         justify-content: space-around;
         padding: 40px;
     }
+    .instagram{
+        position: relative;
+        display: flex;
+        vertical-align: middle;
+        justify-content: space-around;
+    }
     #insta{
         width: 150px;
 
@@ -185,6 +191,10 @@ main{
         position: relative;
         font-size: 20px;
         align-items: center;
+        left: 395px;
+        top: 70px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       
     }
     .servicos{
         position: relative;
@@ -547,11 +557,12 @@ main{
                     </li>
                 </ul>                          
             </div>
-
+           
+            <h2 id="insta-texto">Clique aqui e nos siga no Instagram</h2>
+           
             <div class="instagram">
                 <ul class="instagram2">
-                    <li>
-                        <h4 id="insta-texto">Siga no Instagram</h4>
+                    <li>   
                         <a href="https://www.instagram.com/portalavrasnovas/" target="_blank">
                             <img id="insta" src="noun-instagram-like-1809985.png" target="_blank">
                         </a>
