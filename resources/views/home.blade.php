@@ -21,9 +21,9 @@ a:hover{
 .logo{
     display: flex;
     position: absolute;
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+    font-size: 20px;
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 4px;*/
     align-items: center;
     justify-content: space-around;
 }
@@ -249,38 +249,100 @@ label span:nth-child(3){
         vertical-align: middle;
         justify-content: space-around;
         width: 100%;
-        height: 600px;
+        height: 1565px;
         top: 50px;
     }
     .serv-encontra{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        position: relative;
-        vertical-align: middle;
-        text-align: center;
-        top: 50px;
-        justify-content: space-around;
-        display: flex;
+        list-style: none;
+        margin: 10px;
+        padding: 0;
     }
+    .links-menu-list{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        list-style: none;
+        margin: 10px;
+        padding: 0;
+    }
+    @media screen and (max-width: 767px) {
+    .links-menu-list  h2 {
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .links-menu-list h2 > p:nth-child(1) { order: 1; }
+    .links-menu-list h2 > p:nth-child(2) { order: 3; }
+    .links-menu-list h2 > p:nth-child(3) { order: 2; text-align: right; }
+    .links-menu-list h2 > p:nth-child(4) { order: 4; }
+}
+    .serv-encontra li > h3:last-child {
+    text-align: right;
+}
+    .serv-nao-encontra li > h3:last-child {
+    text-align: right;
+}
+@media screen and (max-width: 767px) {
+    .serv-encontra  li {
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .serv-encontra li > h3:nth-child(1) { order: 1; }
+    .serv-encontra li > h3:nth-child(2) { order: 3; }
+    .serv-encontra li > h3:nth-child(3) { order: 2; text-align: right; }
+    .serv-encontra li > h3:nth-child(4) { order: 4; }
+}
+@media screen and (max-width: 767px) {
+    .serv-nao-encontra  li {
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .serv-nao-encontra li > h3:nth-child(1) { order: 1; }
+    .serv-nao-encontra li > h3:nth-child(2) { order: 3; }
+    .serv-nao-encontra li > h3:nth-child(3) { order: 2; text-align: right; }
+    .serv-nao-encontra li > h3:nth-child(4) { order: 4; }
+}
+.serv-encontra li > h3 {
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  overflow:visible;
+}
+.serv-nao-encontra li > h3 {
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  overflow:visible;
+}
     .serv-encontra li{
         list-style: none;
         top: 50px;
-        padding: 10px;
-        
+        display: grid;
+        grid-template-columns: 3fr 3fr 2fr 1fr;
+        background: #ffffff;
+        border-radius: 3px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+        margin: 8px 0;
+        padding: 15px;
+        grid-gap: 2px 8px;
+        transition: all .1s;
     }
     .serv-nao-encontra li{
         list-style: none;
         top: 50px;
-        padding: 10px;
+        display: grid;
+        grid-template-columns: 3fr 3fr 2fr 1fr;
+        background: #ffffff;
+        border-radius: 3px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+        margin: 8px 0;
+        padding: 15px;
+        grid-gap: 2px 8px;
+        transition: all .1s;
+        
         
     }
     .serv-nao-encontra{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        position: relative;
-        top: 150px;
-        vertical-align: middle;
-        text-align: center;
-        justify-content: space-around;
-        display: flex;
+        list-style: none;
+        margin: 10px;
+        padding: 0;
         
     }    
     #pousada{
@@ -295,16 +357,13 @@ label span:nth-child(3){
     #serv-title{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         position: relative;
-        vertical-align: middle;
-        text-align: center;
+        padding: 35px;
         
     }
     #serv-title2{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         position: relative;
-        vertical-align: middle;
-        text-align: center;
-        top: 100px;
+        padding: 35px;
     }
     
     .historia{
@@ -435,10 +494,14 @@ label span:nth-child(3){
     }
     .card-border{
         border-width: 2px;
-        border-style:solid;
+        border-style: solid;
         border-color: #000000;
-        width: 20rem;
-        height: 15rem;
+        width: 15rem;
+        height: 12rem;
+        padding: 30px;
+        box-shadow: 5px 5px rgba(0, 0, 0, .2);
+}
+       
     }
     .card-header-border{
         border-bottom-width: 2px;
@@ -446,6 +509,9 @@ label span:nth-child(3){
         border-bottom-style:solid;
         padding: 10px;
         box-sizing: border-box;
+        align-content: flex-start;
+        align-items: flex-start;
+        display: flex;
     }
     .card-footer-border{
         border-top-width: 2px;
@@ -457,6 +523,7 @@ label span:nth-child(3){
     }
     .temperature-description{
         padding: 5px;
+        
     }
     .container-fluid{
        
@@ -468,30 +535,32 @@ label span:nth-child(3){
         position: relative;
         top: 60px;
         max-width: 400px;
+        align-content: flex-start;
+        align-items: flex-start;
+        display: flex;
     }
     .card-body-text{
         text-align: center;
     }
 
     .city, .temperature{
-    height: 10vh;
+    
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     padding: 5px;
+    align-content: flex-start;
+    align-items: flex-start;
+    
 
 }
 
-.temperature{
-    flex-direction: column;
-}
+
 
 .degree-section{
     display: flex;
-    align-items: center;
-    cursor: pointer;
 }
 
 .degree-section span{
@@ -512,18 +581,12 @@ label span:nth-child(3){
     font-family: "Poppins", sans-serif;
     background-color: #fafafa;
 }
-.row{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-}
 .card1 {
   border-radius: 5px;
   box-shadow: 7px 7px 0px rgba(50, 50, 50, 0.22);
-  padding: 20px;
   margin: 20px;
-  width: 400px;
+  width: 380px;
   transition: all 0.3s ease-out;
 }
 
@@ -533,8 +596,9 @@ label span:nth-child(3){
 }
  
 .card1 p {
-  color: #a3a5ae;
+  color: #525252;
   font-size: 16px;
+  padding: 15px;
 }
  
 .image {
@@ -558,6 +622,10 @@ label span:nth-child(3){
 }
 .fotos-background{
     
+}
+#temperatura-icone{
+    display: relative;
+    width: 60px;
 }
     </style>
     <link
@@ -608,39 +676,42 @@ label span:nth-child(3){
 
 
             <div class="card-paginas">
-                <div class="row">
+                
+                    <ul class="serv-encontra">
 
-                    <div class="card1 green">
-                      <h2>Cachoeiras</h2>
-                      <a href="{{ route('cachoeiras')}}" >
+                    
+                    <div onclick="navToCachu()" style="cursor: pointer;" class="card1 green">
+                    <li>
+                      <h2>Cachoeiras</h2> 
                       <p>Confira as melhores cachoeiras</p>
                       <img class="image" src="noun-waterfall-2045578.png" alt="" />
-                    </a>
+                    </li>
                     </div>
                
-                    <div class="card1 blue">
+                    <div onclick="navToCultura()" style="cursor: pointer;"class="card1 blue">
+                    <li>
                       <h2>Cultura</h2>
-                      <a href="{{ route('cultura')}}" >
-                      <p>Conheça sobre a cultura local</p>
+                      <p>Conheça a cultura local</p>
                       <img class="image" src="noun-building-2872558.png" alt="" />
-                        </a>
+                    </li>
                     </div>
                
-                    <div class="card1 red">
-                      <h2>Gastronomia</h2>
-                      <a href="{{ route('gastronomia')}}" >
-                      <p>Conheça sobre a gastronomia local</p>
-                      <img class="image" src="noun-jar-4782011.png" alt="" />
-                    </a>
+                    <div onclick="navToGastro()" style="cursor: pointer;" class="card1 red">
+                    <li>
+                        <h2>Gastronomia</h2> 
+                        <p>Conheça a gastronomia local</p>
+                        <img class="image" src="noun-jar-4782011.png" alt="" />
+                    </li>
                     </div>
 
-                    <div class="card1 orange">
+                    <div onclick="navToHosp()" style="cursor: pointer;" class="card1 orange">
+                    <li>
                         <h2>Hospedagem</h2>
-                        <a href="{{ route('hospedagem')}}" >
                         <p>Confira as opções de hospedagem</p>
                         <img class="image" src="noun-accommodation-4578364.png" alt="" />
-                        </a>
+                    </li>
                       </div>
+                    </ul>
                   </div>
               
             </div>
@@ -656,28 +727,26 @@ label span:nth-child(3){
                 <div class="container-fluid">
 
                     <div class="card-border">
-                        <div class="card-header-border">
-                        TEMPO E TEMPERATURA
-                        </div>
+                         <h3 id="title-card-temperatura">TEMPO E TEMPERATURA<br></h3> 
+
                     <div class="card-body">
                         
                          <div class="display-card">
-                            <div class="card-icon">
-                                <img src="1.svg" alt="">
-                            </div>
 
+                            
+                            <img id="temperatura-icone" src="pngegg.png" alt="">
                             <div class="city">Lavras Novas - MG</div>
-                        
                             <div class="temperature">
                                 <div class="degree-section">
                                     <h2 class="temperature-degree"></h2>
-                                    <span class="unit"></span>
+                                    <span class="unit"></span><br><br>
+                                    
                                 </div>
                                 
                             </div>
-                            <div class="temperature-description"></div>
                             
                         </div>
+                        <div class="temperature-description"></div>
                     </div>
                  </div>
 
@@ -775,7 +844,26 @@ label span:nth-child(3){
     
             
     </main>
-    
+
+    <script type="text/javascript">
+        
+        function navToCachu() {
+    window.location.href = "{{ route('cachoeiras')}}";
+    }
+
+    function navToHosp() {
+    window.location.href= "{{ route('hospedagem')}}";
+    }
+
+    function navToGastro() {
+    window.location.href= "{{ route('gastronomia')}}";
+    }
+
+    function navToCultura() {
+    window.location.href= "{{ route('cultura')}}";
+    }
+    </script>
+
     <script type="text/javascript">
     //Script do TEMṔO E TEMPERATURA//
 
