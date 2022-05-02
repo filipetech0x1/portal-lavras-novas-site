@@ -23,7 +23,7 @@ a:hover{
     position: absolute;
     font-size: 20px;
     /*text-transform: uppercase;*/
-    /*letter-spacing: 4px;*/
+    letter-spacing: 4px;
     align-items: center;
     justify-content: space-around;
 }
