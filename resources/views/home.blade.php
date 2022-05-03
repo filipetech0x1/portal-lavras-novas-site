@@ -32,16 +32,19 @@ a:hover{
     justify-content: space-around;
    
 }
+
+
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #054030;
-    height: 8vh;
-    
+    height: 10vh;
 }
-
+html{
+    overflow-y: hidden;
+}
 main{
     overflow-y: scroll;
     background-size: cover;
@@ -623,6 +626,13 @@ label span:nth-child(3){
 .fotos-background{
     
 }
+.descubra{
+    background:#054030;
+    height: 250px;
+    width:100%;
+    margin-top: -7px;
+
+}
 #temperatura-icone{
     display: relative;
     width: 60px;
@@ -670,10 +680,12 @@ label span:nth-child(3){
             
 
            <div class="fotos-background">
-            <img src="" alt="">
+            <img src="foto-background-2.png" alt="">
            </div>
+            
+            <div class="descubra">
 
-
+            </div>
 
             <div class="card-paginas">
                 
