@@ -258,8 +258,7 @@ label span:nth-child(3){
     .serv-encontra{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         list-style: none;
-        margin: 10px;
-        padding: 0;
+        
     }
     .links-menu-list{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -323,7 +322,6 @@ label span:nth-child(3){
         box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
         margin: 8px 0;
         padding: 15px;
-        grid-gap: 2px 8px;
         transition: all .1s;
     }
     .serv-nao-encontra li{
@@ -361,12 +359,14 @@ label span:nth-child(3){
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         position: relative;
         padding: 35px;
+        text-align: center;
         
     }
     #serv-title2{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         position: relative;
         padding: 35px;
+        text-align: center;
     }
     
     .historia{
@@ -637,6 +637,34 @@ label span:nth-child(3){
     display: relative;
     width: 60px;
 }
+#menu-imagem{
+width: 560px;
+margin-top: -518px;
+margin-left: 450px;
+margin-bottom: 75px;
+}
+.servicos-encontra-1{
+    display: grid;
+    list-style: none;
+    grid: repeat(4, 140px) / auto-flow 190px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.serv-encontra-1 li > h3 {
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  overflow:visible;
+}
+.servicos-nao-encontra-1{
+    display: grid;
+    list-style: none;
+    grid: repeat(2, 140px) / auto-flow 190px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
     </style>
     <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
@@ -727,6 +755,8 @@ label span:nth-child(3){
                   </div>
               
             </div>
+            
+              <img id="menu-imagem" src="menu-imagem2.png" alt="">
 
             <div class="historia">
                 <h2 id="title-apresentacao">Lavras Novas</h2>
@@ -766,7 +796,7 @@ label span:nth-child(3){
           
             <div class="servicos">
                 <h2 id="serv-title">Serviços em Lavras Novas</h2> 
-                <ul class="serv-encontra"> 
+                <ul class="servicos-encontra-1"> 
                     <li>
                        <img id="icone-servico" src="noun-inn-4766543.png" alt="">
                         <h3>POUSADAS</h3>
@@ -799,7 +829,7 @@ label span:nth-child(3){
                    
                 </ul>
                 <h2 id="serv-title2">Não possui</h2> 
-                <ul class="serv-nao-encontra">
+                <ul class="servicos-nao-encontra-1">
                     
                     <li>
                         <img id="icone-servico"  src="noun-drugstore-4786256.png" alt="">
