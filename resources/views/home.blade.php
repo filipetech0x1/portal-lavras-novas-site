@@ -248,12 +248,8 @@ label span:nth-child(3){
        
     }
     .servicos{
-        position: relative;
-        vertical-align: middle;
-        justify-content: space-around;
+
         width: 100%;
-        height: 1565px;
-        top: 50px;
     }
     .serv-encontra{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -268,7 +264,7 @@ label span:nth-child(3){
     }
     @media screen and (max-width: 767px) {
     .links-menu-list  h2 {
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 3fr 1fr;}
     }
 
     .links-menu-list h2 > p:nth-child(1) { order: 1; }
@@ -319,9 +315,7 @@ label span:nth-child(3){
         grid-template-columns: 3fr 3fr 2fr 1fr;
         background: #ffffff;
         border-radius: 3px;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
-        margin: 8px 0;
-        padding: 15px;
+        padding: 10px;
         transition: all .1s;
     }
     .serv-nao-encontra li{
@@ -358,56 +352,86 @@ label span:nth-child(3){
     #serv-title{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         position: relative;
-        padding: 35px;
+        height: 20px;
         text-align: center;
+        margin-top: 50px;
         
     }
     #serv-title2{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        position: relative;
-        padding: 35px;
-        text-align: center;
+       
     }
-    
+    serv-title2-class{
+        display: flex;
+        justify-content: space-around;
+    }
     .historia{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        
         left: 30px;
         top: 30px;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(BW-foto.png);
+        height: 481px;   
+    }
+    @media screen and (max-width: 580px){
+        .historia{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        left: 30px;
+        top: 30px;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(BW-foto.png);
+
+        }
     }
     #apresentacao{
-    font-size: 18px;
-    line-height: 34px;
-    padding: 20px;
-    color: #000000;
+    font-size: 19px;
+    line-height: 20px;
+    padding: 15px;
+    color: #ffffff;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-rendering: optimizeLegibility;
     margin: 15px 0;
     margin-bottom: 0.9rem;
+    text-align: center;
+    top: 150px;
+    position: relative;
     }
+
+    @media screen and (max-width: 580px){
+        #apresentacao{
+            top: -5px;
+        }
+    }
+
     #title-apresentacao{
         padding: 20px;
         position: relative;
         top: 20px;
     }
     #title-lavras-hoje{
-        padding: 20px;
+        padding: 10px;
         position: relative;
-        top: 40px;
+        top: 10px;
+        color: #fff;
+    }
+    @media screen and (min-width: 580px){
+        #title-lavras-hoje{
+           text-align: center;
+           width: 84%;
+        }
     }
     .lavras-hoje{
     color: #000000;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-rendering: optimizeLegibility;
     width: 100%;
-    height: 400px;
-
+    height: 280px;
+    background:#054030;
+    color: #fff;
     }
     
     .rodape{
         background: #000000;
         width: 100%;
-        height: 400px;
+        height: 440px;
         
     }
     .rodape li{
@@ -419,12 +443,41 @@ label span:nth-child(3){
         
         
     }
+    @media screen and (max-width: 770px){
+        #rodape-logo3{
+           
+    width: 190px;
+    margin-left: -625px;
+    top: -68px;
+}
+        }
+        
+    }
+    @media screen and (max-width: 770px){
+        .rodape h3{
+            color:#000000;
+        }
+        
+    }
     #text-rod{
         color: #fff;
         font-size: 18px;
         line-height: 34px;
         padding: 5px;
-        top: 100px;
+        top:  155px;
+        position: relative;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-rendering: optimizeLegibility;
+   
+    
+
+    }
+    #text-rod1{
+        color: #fff;
+        font-size: 18px;
+        line-height: 34px;
+        padding: 5px;
+        top:  155px;
         position: relative;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-rendering: optimizeLegibility;
@@ -455,7 +508,7 @@ label span:nth-child(3){
     #li-rod{
      
         padding: 10px;
-        top: 100px;
+        top: 155px;
         display: flex;
         align-items: center;
         text-align: center;
@@ -483,11 +536,10 @@ label span:nth-child(3){
        
     }   
     #rodape-logo3{
-        height: 400px;
         position: absolute;
         justify-content: space-around;
         left: 80px;
-        margin-top: -221px;
+        margin-top: -165px;
         
         
     }
@@ -498,7 +550,7 @@ label span:nth-child(3){
     .card-border{
         border-width: 2px;
         border-style: solid;
-        border-color: #000000;
+        border-color: #ffffff;
         width: 15rem;
         height: 12rem;
         padding: 30px;
@@ -533,10 +585,11 @@ label span:nth-child(3){
         display:flex; 
         justify-content: center;
         text-align: center;
-        height: 300px;
+        height: 390px;
         width: 100%;
         position: relative;
         top: 60px;
+        color:#fff;
         max-width: 400px;
         align-content: flex-start;
         align-items: flex-start;
@@ -591,6 +644,7 @@ label span:nth-child(3){
   margin: 20px;
   width: 380px;
   transition: all 0.3s ease-out;
+  padding: 5px;
 }
 
 .card1:hover {
@@ -628,7 +682,7 @@ label span:nth-child(3){
 }
 .descubra{
     background:#054030;
-    height: 250px;
+   
     width:100%;
     margin-top: -7px;
 
@@ -664,7 +718,57 @@ margin-bottom: 75px;
     align-items: center;
     text-align: center;
 }
+#serv-possui-1{
+   
+    display: inline-block;
+    width: 50%;
+    margin-top: 30px;
+    color: #fff;
+}
+#serv-possui-2{
 
+    width: 50%;
+    float: left;
+    margin-top: 30px;
+    color: #fff;
+}
+.serv-possui1{
+    width: 100%;
+    width: 100%;
+    margin: auto;
+    max-width: 450px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.serv-possui-01{
+    display: inline-block;
+    width: 50%;
+    margin-top: 30px;
+    
+}
+.serv-possui-02{
+    display: inline-block;
+    width: 50%;
+    float: left;
+    margin-top: 30px;
+    
+}
+.serv-possui-001{
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    max-width: 450px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+#linha-vertical {
+    height: 207px;
+    border-right: 1px solid white;
+    width: 45%;
+    margin-top: -217px;
+    margin-bottom: 10px;
+    background: #054030;
+}
     </style>
     <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
@@ -712,7 +816,31 @@ margin-bottom: 75px;
            </div>
             
             <div class="descubra">
+                <div class="container-fluid">
 
+                    <div class="card-border">
+                         <h3 id="title-card-temperatura">TEMPO E TEMPERATURA<br></h3> 
+
+                    <div class="card-body">
+                        
+                         <div class="display-card">
+
+                            
+                            <img id="temperatura-icone" src="pngegg.png" alt="">
+                            <div class="city">Lavras Novas - MG</div>
+                            <div class="temperature">
+                                <div class="degree-section">
+                                    <h2 class="temperature-degree"></h2>
+                                    <span class="unit"></span><br><br>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="temperature-description"></div>
+                    </div>
+                 </div>
             </div>
 
             <div class="card-paginas">
@@ -758,106 +886,50 @@ margin-bottom: 75px;
             
               <img id="menu-imagem" src="menu-imagem2.png" alt="">
 
-            <div class="historia">
-                <h2 id="title-apresentacao">Lavras Novas</h2>
-                <p id="apresentacao">Lavras Novas distrito de Ouro Preto - MG e a 120 km da capital mineira Belo Horizonte possui casas antigas e coloridas, igrejas coloniais e restaurantes. É cercada de montanhas de uma vegetação incrível, que dão um charme especial. É um lugar muito gostoso e acolhedor com seus visitantes, de culinária local e muita história envolvida em todos detalhes, lugar de natureza exuberante, você pode fazer passeio off-road, caminhar na natueza, renovar as energias em suas cachoeiras maravilhosas, escutar uma boa música ao vivo tomando uma cerveja e comendo uma comida típica, em Lavras Novas temos opções para todos os gostos.</p>
+              <div class="historia">
+                <p id="apresentacao">Lavras Novas distrito de Ouro Preto - MG e a 120 km da capital mineira Belo Horizonte possui casas antigas e coloridas, igrejas coloniais e restaurantes. Cercada de montanhas com uma vegetação incrível que dão um charme especial. <br>Lavras Novas é um lugar muito gostoso e acolhedor com seus visitantes, de culinária local e muita história envolvida em todos os cantos e detalhes. Lugar de natureza exuberante, de pessoas hospitaleiras, daquele jeito que faz qualquer  um se sentir em casa!<br>Você pode fazer passeio off-road, caminhar na natureza, renovar as energias em suas cachoeiras maravilhosas. Você pode escutar uma boa música ao vivo tomando uma cervejinha e comendo uma comida típica no gramado dos bares.<br>Lavras Novas tem opções para todos os gostos!</p>
             </div>
             
-            <div class="lavras-hoje">
-                <h2 id="title-lavras-hoje">Lavras Novas hoje</h2>
+              <div class="lavras-hoje">
+                <h2 id="title-lavras-hoje">Serviços em Lavras Novas</h2>
 
-                <div class="container-fluid">
-
-                    <div class="card-border">
-                         <h3 id="title-card-temperatura">TEMPO E TEMPERATURA<br></h3> 
-
-                    <div class="card-body">
-                        
-                         <div class="display-card">
-
-                            
-                            <img id="temperatura-icone" src="pngegg.png" alt="">
-                            <div class="city">Lavras Novas - MG</div>
-                            <div class="temperature">
-                                <div class="degree-section">
-                                    <h2 class="temperature-degree"></h2>
-                                    <span class="unit"></span><br><br>
-                                    
-                                </div>
-                                
-                            </div>
+                <div class="servicos">
+                    <div class="serv-possui1">
+                        <div id="serv-possui-1"><b>Não possui</b></div>
+                        <div id="serv-possui-2"><b>Possui</b></div>
+                    </div>
+                    </div>
+                    <div class="serv-possui-001">
+        
+                        <div class="serv-possui-01">
+                            <li id="texto-serviicos">Drogaria</li>
+                            <li id="texto-serviicos">Posto</li>
+                            <li id="texto-serviicos">Hospital</li>
+                            <li id="texto-serviicos">Taxi</li>
                             
                         </div>
-                        <div class="temperature-description"></div>
-                    </div>
-                 </div>
-
-            </div>
-          
-            <div class="servicos">
-                <h2 id="serv-title">Serviços em Lavras Novas</h2> 
-                <ul class="servicos-encontra-1"> 
-                    <li>
-                       <img id="icone-servico" src="noun-inn-4766543.png" alt="">
-                        <h3>POUSADAS</h3>
-                    </li>
-                    <li>
-                        <img id="icone-servico" src="noun-restaurant-3381726.png" alt="">
-                        <h3>RESTAURANTES</h3>
-                    </li>
-                    <li>
-                        <img id="icone-servico" src="noun-beers-1159050.png" alt="">
-                        <h3>BARES</h3>
-                    </li>
-                    <li>
-                        <img id="icone-servico" src="noun-off-road-3480756.png" alt="">
-                        <h3>PASSEIOS OFF-ROAD</h3>
-                    </li>
-                    <li>
-                        <img id="icone-servico" src="noun-zipline-3268401.png" alt="">
-                        <h3>TIROLESA</h3>
-                    </li>
-                    <li>
-                        <img id="icone-servico" src="noun-tourist-guide-4249416.png" alt="">
-                        <h3>GUIA TURÍSTICO</h3>
-                    </li>
-                    <li>
-                        <img id="icone-servico" src="noun-ecotourism-4441702.png" alt="">
-                        <h3>ECOTURISMO</h3>
-                    </li>
-                    
                    
-                </ul>
-                <h2 id="serv-title2">Não possui</h2> 
-                <ul class="servicos-nao-encontra-1">
-                    
-                    <li>
-                        <img id="icone-servico"  src="noun-drugstore-4786256.png" alt="">
-                        <h3> DROGARIA</h3>
-                    </li>
+                        <div class="serv-possui-02">
+                            <li id="texto-serviicos">Pousadas</li>
+                            <li id="texto-serviicos">Restaurantes</li>
+                            <li id="texto-serviicos">Bares</li>
+                            <li id="texto-serviicos">Passeios off-road</li>
+                            <li id="texto-serviicos">Tirolesa</li>
+                            <li id="texto-serviicos">Ecoturismo</li>
+                            <li id="texto-serviicos">Ecoventura</li>
+                            
+                            
+                        </div>
+            
+                    </div>
 
-                    <li>
-                        <img id="icone-servico"  src="noun-gas-station-4780975.png" alt="">
-                        <h3> POSTO </h3>
-                    </li>
-
-                    <li>
-                        <img id="icone-servico"  src="noun-hospital-4787144.png" alt="">
-                        <h3> HOSPITAL </h3>
-                    </li>
-
-                    <li>
-                        <img id="icone-servico" src="noun-taxi-101917.png" alt="">
-                        <h3> TAXI </h3>
-                    </li>
-                </ul>
-            </div>
 
             
-
+            </div>
+            <div id="linha-vertical"></div>
        <footer>
         <div class="rodape">
-            <h3 id="text-rod">Portal Lavras Novas</h3>
+            <h3 id="text-rod1">Portal Lavras Novas</h3>
             <h4 id="text-rod">Assuntos relacionados ao site:</h4>
             <ul class="rodape2">
                 <ul class="rodape3">
@@ -873,7 +945,7 @@ margin-bottom: 75px;
                     </a>
                 </li>
                 </ul>
-                <li><p id="text-rod">Idealizador - joaopedroartes07@gmail.com <br>Desenvolvido por filipetech01 - filipetech01@gmail.com</p></li>
+                <li><p id="text-rod">Fundador João Pedro Maia - joaopedroartes07@gmail.com <br>Desenvolvido por <a href="https://www.instagram.com/filipetech01/" target="_blank">filipetech01</a> - filipetech01@gmail.com</p></li>
 
             </ul>
             <div class="rodape-logo">
