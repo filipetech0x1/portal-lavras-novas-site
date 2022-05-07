@@ -254,7 +254,9 @@ label span:nth-child(3){
     .serv-encontra{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         list-style: none;
-        
+        padding: 5px;
+        margin-left: -15px;
+        margin-bottom: -33px;
     }
     .links-menu-list{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -411,11 +413,12 @@ label span:nth-child(3){
         position: relative;
         top: 10px;
         color: #fff;
+        text-align: center;
     }
     @media screen and (min-width: 580px){
         #title-lavras-hoje{
            text-align: center;
-           width: 84%;
+           width: 100%;
         }
     }
     .lavras-hoje{
@@ -636,6 +639,7 @@ label span:nth-child(3){
 .card-paginas{
     font-family: "Poppins", sans-serif;
     background-color: #fafafa;
+    margin: -6px;
 }
 
 .card1 {
@@ -724,6 +728,7 @@ margin-bottom: 75px;
     width: 50%;
     margin-top: 30px;
     color: #fff;
+    text-align: center;
 }
 #serv-possui-2{
 
@@ -731,6 +736,7 @@ margin-bottom: 75px;
     float: left;
     margin-top: 30px;
     color: #fff;
+    text-align: center;
 }
 .serv-possui1{
     width: 100%;
@@ -764,10 +770,46 @@ margin-bottom: 75px;
 #linha-vertical {
     height: 207px;
     border-right: 1px solid white;
-    width: 45%;
+    width: 50%;
     margin-top: -217px;
     margin-bottom: 10px;
     background: #054030;
+}
+@media screen and (max-width: 580px){
+    #linha-vertical{
+        width: 215px;
+        margin-top: -220px;
+    }
+}
+#texto-serviicos{
+    position: relative;
+    left: 50px;
+}
+.button-right{
+    height: 520px;
+    position: relative;
+    top: -520px;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    margin-top: 0;
+    transition: all .25s ease-in;
+    opacity: .4;
+    filter: alpha(opacity=40);
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    background: none;
+    border: 0;
+    font-size: 32px;
+    cursor: pointer;
+    padding: 5px;
+    right: 0;
+}
+.button-left{
+    height:520px;
+    position: relative;
+    top: -520px;
 }
     </style>
     <link
@@ -812,7 +854,15 @@ margin-bottom: 75px;
             
 
            <div class="fotos-background">
-            <img src="foto-background-2.png" alt="">
+
+            <img class="mySlides" src="foto-background-1.png">
+            <img class="mySlides" src="foto-background-2.png">
+            <img class="mySlides" src="foto-background-3.png">
+            <img class="mySlides" src="foto-background-4.png">
+            
+            <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="button-right" onclick="plusDivs(+1)">&#10095;</button>
+
            </div>
             
             <div class="descubra">
@@ -958,6 +1008,45 @@ margin-bottom: 75px;
     
             
     </main>
+    <script>
+        //SlideBotao
+        var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+    showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+    </script>
+
+    <script type="text/javascript">
+    /*//SlideShow
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 3 second
+    }*/
+
+    </script>
 
     <script type="text/javascript">
         
