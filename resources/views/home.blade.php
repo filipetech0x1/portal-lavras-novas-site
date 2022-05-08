@@ -787,29 +787,37 @@ margin-bottom: 75px;
 }
 .button-right{
     height: 520px;
-    position: relative;
-    top: -520px;
+    /* top: -520px; */
     color: #fff;
-    font-size: 26px;
-    bottom: 0;
-    margin-top: 0;
     transition: all .25s ease-in;
-    opacity: .4;
+    opacity: 0.6;
     filter: alpha(opacity=40);
     position: absolute;
     z-index: 2;
-    top: 20px;
-    background: none;
+    top: 66px;
+    background: #fafafa00;
     border: 0;
     font-size: 32px;
     cursor: pointer;
     padding: 5px;
-    right: 0;
+    right: 15px;
 }
 .button-left{
-    height:520px;
-    position: relative;
-    top: -520px;
+    height: 520px;
+    /* top: -520px; */
+    color: #fff;
+    transition: all .25s ease-in;
+    opacity: 0.6; 
+    filter: alpha(opacity=40);
+    position: absolute;
+    z-index: 2;
+    top: 66px;
+    background: #fafafa00;
+    border: 0;
+    font-size: 32px;
+    cursor: pointer;
+    padding: 5px;
+    left: 0;
 }
     </style>
     <link
@@ -859,13 +867,14 @@ margin-bottom: 75px;
             <img class="mySlides" src="foto-background-2.png">
             <img class="mySlides" src="foto-background-3.png">
             <img class="mySlides" src="foto-background-4.png">
-            
-            <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="button-right" onclick="plusDivs(+1)">&#10095;</button>
 
            </div>
-            
+
+           <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
+           <button class="button-right" onclick="plusDivs(+1)">&#10095;</button>
+
             <div class="descubra">
+
                 <div class="container-fluid">
 
                     <div class="card-border">
