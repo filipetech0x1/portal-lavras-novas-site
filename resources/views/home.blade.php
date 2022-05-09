@@ -787,37 +787,48 @@ margin-bottom: 75px;
 }
 .button-right{
     height: 520px;
-    /* top: -520px; */
+    top: -520px;
     color: #fff;
     transition: all .25s ease-in;
     opacity: 0.6;
     filter: alpha(opacity=40);
-    position: absolute;
+    position: relative;
     z-index: 2;
-    top: 66px;
     background: #fafafa00;
     border: 0;
     font-size: 32px;
     cursor: pointer;
     padding: 5px;
-    right: 15px;
 }
 .button-left{
     height: 520px;
-    /* top: -520px; */
+    top: -520px;
     color: #fff;
     transition: all .25s ease-in;
     opacity: 0.6; 
     filter: alpha(opacity=40);
-    position: absolute;
+    position: relative;
     z-index: 2;
-    top: 66px;
     background: #fafafa00;
     border: 0;
     font-size: 32px;
     cursor: pointer;
     padding: 5px;
     left: 0;
+}
+.butao-foto{
+    display: flex;
+    justify-content: space-between;
+    height: 0;
+}
+.critica-sugestao{
+    width:100%;
+    height: 280px;
+    background: #054030;
+}
+.board-principal-cs{
+    height: 160px;
+    background:#f0f0f0;
 }
     </style>
     <link
@@ -870,9 +881,11 @@ margin-bottom: 75px;
 
            </div>
 
-           <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
-           <button class="button-right" onclick="plusDivs(+1)">&#10095;</button>
-
+           <div class="butao-foto">
+                <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="button-right" onclick="plusDivs(+1)">&#10095;</button>
+           </div>
+           
             <div class="descubra">
 
                 <div class="container-fluid">
@@ -986,6 +999,12 @@ margin-bottom: 75px;
             
             </div>
             <div id="linha-vertical"></div>
+
+    <div class="critica-sugestao">
+        <div class="board-principal-cs">
+
+        </div>
+    </div>
        <footer>
         <div class="rodape">
             <h3 id="text-rod1">Portal Lavras Novas</h3>
@@ -1039,7 +1058,7 @@ margin-bottom: 75px;
     </script>
 
     <script type="text/javascript">
-    /*//SlideShow
+    //SlideShow
     var slideIndex = 0;
     carousel();
 
@@ -1052,8 +1071,8 @@ margin-bottom: 75px;
         slideIndex++;
         if (slideIndex > x.length) {slideIndex = 1}
         x[slideIndex-1].style.display = "block";
-        setTimeout(carousel, 3000); // Change image every 3 second
-    }*/
+        setTimeout(carousel,2500); // Change image every second
+    }
 
     </script>
 
