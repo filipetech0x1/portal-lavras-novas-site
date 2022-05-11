@@ -830,6 +830,22 @@ margin-bottom: 75px;
     height: 160px;
     background:#f0f0f0;
 }
+.mapa{
+
+}
+@media screen and (max-width: 770px){
+#mapa-iframe{
+    width: 100%;
+    height: 400px;
+}
+.mapa-div{
+    padding: 5px;
+    margin-top: -35px;
+}
+.mapa{
+    
+}
+}
     </style>
     <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
@@ -915,6 +931,11 @@ margin-bottom: 75px;
                  </div>
             </div>
 
+            <div class="mapa">
+                <div class="mapa-div">
+                    <iframe id="mapa-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14951.243248504466!2d-43.52565978423481!3d-20.47296217730076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa3f48f3bd35849%3A0x8457381ebd95ba17!2sLavras%20Novas%2C%20Ouro%20Preto%20-%20MG%2C%2035400-000!5e0!3m2!1spt-BR!2sbr!4v1652234265361!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
             <div class="card-paginas">
                 
                     <ul class="serv-encontra">
@@ -1000,10 +1021,6 @@ margin-bottom: 75px;
             </div>
             <div id="linha-vertical"></div>
 
-    <div class="critica-sugestao">
-        <div class="board-principal-cs">
-
-        </div>
     </div>
        <footer>
         <div class="rodape">
@@ -1036,6 +1053,7 @@ margin-bottom: 75px;
     
             
     </main>
+
     <script>
         //SlideBotao
         var slideIndex = 1;
@@ -1095,13 +1113,13 @@ margin-bottom: 75px;
     }
     </script>
 
+    
+   
+
+    
+
     <script type="text/javascript">
     //Script do TEMṔO E TEMPERATURA//
-
-    //https://api.openweathermap.org/data/2.5/weather?lat=-20.46280125&lon=-43.52637183940418&appid=0259ee4de878b5ef5b8fa1ed05dd3cff&units=metric&lang=pt_br
-
-    //http://apiadvisor.climatempo.com.br/api/v1/weather/locale/3477/current?token=39c87a7e35a6653d2a65b221e7c1d361
-
     
 
     window.addEventListener('load', ()=>{
