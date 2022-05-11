@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <style>
 *{
@@ -551,7 +551,7 @@ label span:nth-child(3){
         height: 80px;
     }
     .card-border{
-        border-width: 2px;
+        border-width: 3px;
         border-style: solid;
         border-color: #ffffff;
         width: 15rem;
@@ -830,8 +830,28 @@ margin-bottom: 75px;
     height: 160px;
     background:#f0f0f0;
 }
+@media screen and (min-width: 770px){
+.mapa-div{
+    position: relative;
+    top: -345px;
+    left: 50%;
+}
+.mapa-div-border{
+    border-width: 4px;
+    border-style: solid;
+    border-color: #ffffff;
+    position: relative;
+    border-bot: ridge;
+    width: 25rem;
+    height: 18.7rem;
+    box-shadow: 5px 5px rgb(0 0 0 / 20%);
+}
 .mapa{
+    height: 0;
+}
+#mapa-iframe{
 
+}
 }
 @media screen and (max-width: 770px){
 #mapa-iframe{
@@ -842,9 +862,12 @@ margin-bottom: 75px;
     padding: 5px;
     margin-top: -35px;
 }
-.mapa{
-    
 }
+#icone-i{
+    margin-left: 47%;
+    top: -348px;
+    height: 0;
+    position: relative;
 }
     </style>
     <link
@@ -933,9 +956,12 @@ margin-bottom: 75px;
 
             <div class="mapa">
                 <div class="mapa-div">
-                    <iframe id="mapa-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14951.243248504466!2d-43.52565978423481!3d-20.47296217730076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa3f48f3bd35849%3A0x8457381ebd95ba17!2sLavras%20Novas%2C%20Ouro%20Preto%20-%20MG%2C%2035400-000!5e0!3m2!1spt-BR!2sbr!4v1652234265361!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="mapa-div-border">
+                        <iframe id="mapa-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14951.243248504466!2d-43.52565978423481!3d-20.47296217730076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa3f48f3bd35849%3A0x8457381ebd95ba17!2sLavras%20Novas%2C%20Ouro%20Preto%20-%20MG%2C%2035400-000!5e0!3m2!1spt-BR!2sbr!4v1652234265361!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
+            <i id="icone-i" style="font-size:24px" class="fa">&#xf05a;</i>
             <div class="card-paginas">
                 
                     <ul class="serv-encontra">
