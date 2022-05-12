@@ -867,7 +867,7 @@ margin-bottom: 75px;
     margin-left: 47%;
     top: -348px;
     height: 0;
-    position: relative;
+    position: relative; 
 }
     </style>
     <link
