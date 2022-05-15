@@ -868,6 +868,7 @@ margin-bottom: 75px;
     top: -348px;
     height: 0;
     position: relative; 
+    display: none;
 }
     </style>
     <link
@@ -901,7 +902,7 @@ margin-bottom: 75px;
                     <li> <a href="{{ route('cultura')}}">Cultura</a></li>
                     <li><a href="{{ route('gastronomia')}}">Gastronomia</a></li>
                     <li> <a href="{{ route('hospedagem')}}">Hospedagem</a></li>
-                    <li><a href="{{ route('loja')}}">Loja</a></li>
+                    <!--<li><a href="{{ route('loja')}}">Loja</a></li>-->
                 </ul>
 
             </nav>

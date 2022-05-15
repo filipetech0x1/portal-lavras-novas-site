@@ -572,7 +572,7 @@
                 <li> <a href="{{ route('cultura')}}">Cultura</a></li>
                 <li><a href="{{ route('gastronomia')}}">Gastronomia</a></li>
                 <li> <a href="{{ route('hospedagem')}}">Hospedagem</a></li>
-                <li><a href="{{ route('loja')}}">Loja</a></li>
+               <!--<li><a href="{{ route('loja')}}">Loja</a></li>-->
             </ul>
 
         </nav>

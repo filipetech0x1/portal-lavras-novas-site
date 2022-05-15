@@ -545,6 +545,109 @@ label span:nth-child(3){
         
         
     }
+    .cachu-top{
+        
+
+    }
+    .cachu-top-text{
+        
+    }
+    .cachu-top-flex{
+    display: flex;
+    justify-content: center;
+    bottom: -250px;
+    position: relative;
+    }
+    .cachu-img{
+        display:flex;
+        width:50%;
+        justify-content:space-between;
+        height: 500px;
+    }
+    #cachu-top-text{
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 50px;
+        
+    }
+    .gradiente{
+        background: url() linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    }
+    .bloco-1{
+        height: 400px;
+        background: #054030;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .bloco-1 h1{
+        color: #fff;
+        display: block;
+        text-align: center;
+        padding: 25px;
+
+    }
+    .cachu-list{
+        color: #fff;
+        position: relative;
+        text-align: center;
+        white-space: pre-wrap;
+        font-size: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 10px;
+    }
+    .cahu-list li{
+        text-align: center;
+        color: #fff;
+        
+        
+    }
+    .bloco-2,.bloco-3,.bloco-4{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        height: 400px;
+        background: #2e5739;
+        color: #eaa860;
+        padding: 20px;
+        text-align: center;
+    }
+  
+    #trespingos-img{
+        width: 250px;
+    }
+    #rapel-img{
+        width: 250px;
+    }
+    #bacia-img{
+        width: 250px;
+    }
+    .border-cachu{
+        border-width: 4px;
+        border-style: solid;
+        border-color: #ffffff;
+        position: relative;
+        border-bot: ridge;
+        width: 15.7rem;
+        height: 19.5rem;
+        box-shadow: 5px 5px rgb(0 0 0 / 20%);
+    }
+    .border-cachu-rapel{
+        border-width: 4px;
+        border-style: solid;
+        border-color: #ffffff;
+        position: relative;
+        border-bot: ridge;
+        width: 15.7rem;
+        height: 19.5rem;
+        box-shadow: 5px 5px rgb(0 0 0 / 20%);
+    }
+    .border-bacia-custodio{
+        border-width: 4px;
+        border-style: solid;
+        border-color: #ffffff;
+        position: relative;
+        border-bot: ridge;
+        width: 15.7rem;
+        height: 19.5rem;
+        box-shadow: 5px 5px rgb(0 0 0 / 20%);
+    }
             </style>
     <title>Cachoeiras</title>
 </head>
@@ -572,13 +675,70 @@ label span:nth-child(3){
                 <li> <a href="{{ route('cultura')}}">Cultura</a></li>
                 <li><a href="{{ route('gastronomia')}}">Gastronomia</a></li>
                 <li> <a href="{{ route('hospedagem')}}">Hospedagem</a></li>
-                <li><a href="{{ route('loja')}}">Loja</a></li>
+                <!--<li><a href="{{ route('loja')}}">Loja</a></li>-->
             </ul>
 
         </nav>
     
     </header>
     <main>
+        <div class="cachu-top">
+            <div class="gradiente">
+
+                <div class="cachu-top-flex">
+                    
+                </div>
+            
+                <div class="cachu-img">
+                 <img src="cachufalcao.jpg" alt="">
+                    <img src="cachu3pingos.jpg" alt="">
+                    <img src="cachurapel.jpg" alt="">
+                </div>
+             </div>
+        </div>
+
+    <div class="bloco-1">
+        <h1>Ir para</h1>
+        <div class="cachu-list">
+            <li id="cachu-3pingos"><a href="#cachu-3pingos-2">Cachoeira três pingos</a></li>
+            <li id="cachu-rapel"><a href="#cachu-rapel-2">Cachoeira do rapel</a></li>
+            <li id="bacia-custodio"><a href="#bacia-custodio-2">Bacia do custódio</a></li>
+
+        </div>
+    </div>
+    <div class="bloco-2">
+        <h1 id="cachu-3pingos-2">Cachoeira três pingos</h1>
+        <div class="border-cachu">
+            <img id="trespingos-img" src="3pingos.jpg" alt="">
+        </div>
+    </div>
+    <div class="bloco-3">
+        <h1 id="cachu-rapel-2">Cachoeira do rapel</h1>
+        <div class="border-cachu-rapel">
+            <img id="rapel-img" src="cachurapel.jpg" alt="">
+        </div>
+    </div>
+    <div class="bloco-4">
+         <h1 id="bacia-custodio-2">Bacia do custódio</h1>
+         <div  class="border-bacia-custodio">
+            <img id="bacia-img"src="bacia.jpg" alt="">
+        </div>
+    </div>
+    
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <footer>
