@@ -604,8 +604,8 @@ label span:nth-child(3){
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         height: 400px;
         background: #2e5739;
-        color: #eaa860;
-        padding: 20px;
+        color: #ffffff;
+        padding: 10px;
         text-align: center;
     }
   
@@ -648,6 +648,25 @@ label span:nth-child(3){
         height: 19.5rem;
         box-shadow: 5px 5px rgb(0 0 0 / 20%);
     }
+    .trespingos-texto{
+        position: relative;
+        text-align: left;
+        padding: 20px;
+        color: #ffffff
+        
+    }
+    .trespingos-flex{
+        display:flex;
+        padding: 20px;
+    }
+    #cachu-3pingos-2{
+        padding: 10px;
+    }
+    #texto-cachu{
+        text-rendering: optimizeLegibility;
+        line-height: 21px;
+    }
+
             </style>
     <title>Cachoeiras</title>
 </head>
@@ -708,20 +727,41 @@ label span:nth-child(3){
     </div>
     <div class="bloco-2">
         <h1 id="cachu-3pingos-2">Cachoeira três pingos</h1>
-        <div class="border-cachu">
-            <img id="trespingos-img" src="3pingos.jpg" alt="">
+        <div class="trespingos-flex">
+            <div class="border-cachu">
+             <img id="trespingos-img" src="3pingos.jpg" alt="">
+            </div>
+
+            <div class="trespingos-texto">
+                <p id="texto-cachu">Está localizada a 4,1 km de Lavras Novas, formada por uma queda d’água de aproximadamente 12 metros e que, ao atingir um degrau se divide formando outras três quedas menores propícias para banho. Por não possuir poço fundo, pode ser indicada para levar crianças. Pode-se ir a pé, de bike, a cavalo ou de carro. Fica na mesma direção da Cachoeira dos Namorados e da Represa do Custódio. <br><br> <b>De carro: </b>a partir da Igreja de Nossa Senhora dos Prazeres, em Lavras Novas, percorrer cerca de 4 Km até o primeiro entroncamento, virar à esquerda, à esquerda novamente e depois à direita. É possível estacionar o carro a cerca de 150m da cachoeira. Devido às condições da estrada, é recomendável fazer esse trajeto em veículos 4x4.<br><br> <b> A pé: </b>o início da caminhada começa após o término da Rua Principal (abaixo da Pousada Kokopelli); ao todo é 1h de caminhada. </p>
+            </div>
         </div>
     </div>
     <div class="bloco-3">
         <h1 id="cachu-rapel-2">Cachoeira do rapel</h1>
-        <div class="border-cachu-rapel">
-            <img id="rapel-img" src="cachurapel.jpg" alt="">
-        </div>
+        <div class="trespingos-flex">
+            <div class="border-cachu-rapel">
+                <img id="rapel-img" src="cachurapel.jpg" alt="">
+            </div>
+
+            <div class="trespingos-texto">
+                <p>texto exemplo</p>
+            </div>
+
+        </div> 
     </div>
+
     <div class="bloco-4">
          <h1 id="bacia-custodio-2">Bacia do custódio</h1>
-         <div  class="border-bacia-custodio">
-            <img id="bacia-img"src="bacia.jpg" alt="">
+        <div class="trespingos-flex">
+            <div  class="border-bacia-custodio">
+                <img id="bacia-img"src="bacia.jpg" alt="">
+            </div>
+
+            <div class="trespingos-texto">
+                <p>texto exemplo</p>
+            </div>
+
         </div>
     </div>
     
