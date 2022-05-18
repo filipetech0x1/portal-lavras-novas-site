@@ -605,7 +605,7 @@ label span:nth-child(3){
         background: #2e5739;
         color: #ffffff;
         padding: 10px;
-        text-align: center;
+        text-align: left;
     }
   
     #trespingos-img{
@@ -767,6 +767,7 @@ label span:nth-child(3){
             <li id="cachu-3pingos"><a href="#cachu-3pingos-2">Cachoeira três pingos</a></li>
             <li id="cachu-rapel"><a href="#cachu-rapel-2">Cachoeira do rapel</a></li>
             <li id="bacia-custodio"><a href="#bacia-custodio-2">Bacia do custódio</a></li>
+            <li id="bacia-custodio"><a href="#nome-da-cachoeira-2">Nome da cachoeira</a></li>
 
         </div>
     </div>
@@ -836,34 +837,23 @@ label span:nth-child(3){
                 </span></p>
         </details>
     </div>
-
-        <footer>
-            <div class="rodape">
-                <h3 id="text-rod1">Portal Lavras Novas</h3>
-                <h4 id="text-rod">Assuntos relacionados ao site:</h4>
-                <ul class="rodape2">
-                    <ul class="rodape3">
-                    <li id="li-rod">
-                        <a href="mailto:/*emaildoportal*/" target="_blank">
-                            <img id="text-rod2" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="">
-                        </a>
-                    </li>
-                    <li  id="li-rod">
-                        <a href="https://www.instagram.com/portalavrasnovas/" target="_blank">
-                            <img id="text-rod2" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white
-                            " target="_blank">
-                        </a>
-                    </li>
-                    </ul>
-                    <li><p id="text-rod">Fundador João Pedro Maia - joaopedroartes07@gmail.com <br>Desenvolvido por <a href="https://www.instagram.com/filipetech01/" target="_blank">filipetech01</a> - filipetech01@gmail.com</p></li>
-    
-                </ul>
-                <div class="rodape-logo">
-                            <img  id="rodape-logo3" src="logo-rodape.png" alt="">
-                </div>
-           </div> 
-             
-           </footer>
+<!----------------Molde das cachoeiras------------------------------------------------------>
+    <div class="bloco-4">
+        <h1 id="bacia-custodio-2">Nome da Cachoeira</h1>
+       <div class="trespingos-flex">
+           <div  class="border-bacia-custodio">
+               <img id="bacia-img"src="cachoeira.jpg" alt="cachoeira-img">
+           </div>
+            <div class="trespingos-texto">
+                <p><span id="saiba-mais">Texto cachoeira vai aqui(PC)</p>
+            </div>
+            <details class="detalhe">
+                <summary class="sumario">Saiba mais</summary>
+                <p>Texto cachoeira vai aqui(Mobile)</p>
+            </details>
+    </div>
+<!------------------------------------------------------------------------------------------>
+     
         
     </main>
 

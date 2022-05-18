@@ -1026,7 +1026,7 @@ margin-bottom: 75px;
                             <li id="texto-serviicos">Posto</li>
                             <li id="texto-serviicos">Hospital</li>
                             <li id="texto-serviicos">Taxi</li>
-                            
+                            <li id="texto-serviicos">Banco</li>
                         </div>
                    
                         <div class="serv-possui-02">
