@@ -705,8 +705,25 @@ label span:nth-child(3){
         width: 39%;
         font-size: 18px;
     }
+    .dicas h1{
+        color: #fff;
+        display: block;
+        text-align: center;
+        padding: 25px;
+    }
+    .dicas-list{
+    color: #fff;
+    position: relative;
+    text-align: center;
+    white-space: pre-wrap;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    }
 }
-
+.dicas{
+    background:#054030;
+}
 
 .container-teste {
     display: none;
@@ -771,6 +788,18 @@ label span:nth-child(3){
 
         </div>
     </div>
+        <div class="dicas">
+            <h1>Dicas</h1>
+            <ul class="dicas-list">
+                <li>Recolha todo seu lixo. Se possível traga de volta também o de pessoas menos cuidadosas</li>
+                <li>Evite cortar lenha para fogueira. Use só os galhos caídos e apague as cinzas</li>
+                <li>Evite usar sabão nas fontes, riachos e lagos</li>
+                <li>Evite música alta e jogos ruidosos, as pessoas ao seu redor podem estar em busca de silêncio</li>
+                <li>Evite os atalhos nas trilhas que podem provocar erosão</li>
+                <li>Não maltrate as plantas e nem os animais</li>
+                
+            </ul>
+        </div>
     <div class="bloco-2">
         <h1 id="cachu-3pingos-2">Cachoeira três pingos</h1>
         <div class="trespingos-flex">
@@ -779,12 +808,12 @@ label span:nth-child(3){
             </div>
             
             <div class="trespingos-texto">
-                <p id="texto-cachu"><span id="saiba-mais">Está localizada a 4,1 km de Lavras Novas, formada por uma queda d’água de aproximadamente 12 metros e que, ao atingir um degrau se divide formando outras três quedas menores propícias para banho. Por não possuir poço fundo, pode ser indicada para levar crianças. Pode-se ir a pé, de bike, a cavalo ou de carro. Fica na mesma direção da Cachoeira dos Namorados e da Represa do Custódio. <br><br> <b>De carro: </b>a partir da Igreja de Nossa Senhora dos Prazeres, em Lavras Novas, percorrer cerca de 4 Km até o primeiro entroncamento, virar à esquerda, à esquerda novamente e depois à direita. É possível estacionar o carro a cerca de 150m da cachoeira. Devido às condições da estrada, é recomendável fazer esse trajeto em veículos 4x4.<br><br> <b> A pé: </b>o início da caminhada começa após o término da Rua Principal (abaixo da Pousada Kokopelli); ao todo é 1h de caminhada. </span></p>
+                <p id="texto-cachu"><span id="saiba-mais"><br>Está localizada a 4,1 km de Lavras Novas, formada por uma queda d’água de aproximadamente 12 metros e que, ao atingir um degrau se divide formando outras três quedas menores propícias para banho. Por não possuir poço fundo, pode ser indicada para levar crianças. Pode-se ir a pé, de bike, a cavalo ou de carro. Fica na mesma direção da Cachoeira dos Namorados e da Represa do Custódio. <br><br> <b>De carro: </b>a partir da Igreja de Nossa Senhora dos Prazeres, em Lavras Novas, percorrer cerca de 4 Km até o primeiro entroncamento, virar à esquerda, à esquerda novamente e depois à direita. É possível estacionar o carro a cerca de 150m da cachoeira. Devido às condições da estrada, é recomendável fazer esse trajeto em veículos 4x4.<br><br> <b> A pé: </b>o início da caminhada começa após o término da Rua Principal (abaixo da Pousada Kokopelli); ao todo é 1h de caminhada. </span></p>
             </div>
         </div>
         <details class="detalhe">
             <summary class="sumario">Saiba mais</summary>
-            <p id="texto-cachu"><span id="saiba-mais">Está localizada a 4,1 km de Lavras Novas, formada por uma queda d’água de aproximadamente 12 metros e que, ao atingir um degrau se divide formando outras três quedas menores propícias para banho. Por não possuir poço fundo, pode ser indicada para levar crianças. Pode-se ir a pé, de bike, a cavalo ou de carro. Fica na mesma direção da Cachoeira dos Namorados e da Represa do Custódio. <br><br> <b>De carro: </b>a partir da Igreja de Nossa Senhora dos Prazeres, em Lavras Novas, percorrer cerca de 4 Km até o primeiro entroncamento, virar à esquerda, à esquerda novamente e depois à direita. É possível estacionar o carro a cerca de 150m da cachoeira. Devido às condições da estrada, é recomendável fazer esse trajeto em veículos 4x4.<br><br> <b> A pé: </b>o início da caminhada começa após o término da Rua Principal (abaixo da Pousada Kokopelli); ao todo é 1h de caminhada. </span></p>
+            <p id="texto-cachu"><span id="saiba-mais"><br>Está localizada a 4,1 km de Lavras Novas, formada por uma queda d’água de aproximadamente 12 metros e que, ao atingir um degrau se divide formando outras três quedas menores propícias para banho. Por não possuir poço fundo, pode ser indicada para levar crianças. Pode-se ir a pé, de bike, a cavalo ou de carro. Fica na mesma direção da Cachoeira dos Namorados e da Represa do Custódio. <br><br> <b>De carro: </b>a partir da Igreja de Nossa Senhora dos Prazeres, em Lavras Novas, percorrer cerca de 4 Km até o primeiro entroncamento, virar à esquerda, à esquerda novamente e depois à direita. É possível estacionar o carro a cerca de 150m da cachoeira. Devido às condições da estrada, é recomendável fazer esse trajeto em veículos 4x4.<br><br> <b> A pé: </b>o início da caminhada começa após o término da Rua Principal (abaixo da Pousada Kokopelli); ao todo é 1h de caminhada. </span></p>
         </details>
     </div>
     
@@ -796,14 +825,14 @@ label span:nth-child(3){
             </div>
             
             <div class="trespingos-texto">
-                <p><span id="saiba-mais">Está é uma belíssima cachoeira. Mas é muito importante avisar que só é possível chegar nela com a ajuda de um guia experiente já que o acesso é difícil na hora de descer as pedras. Uma queda não seria nada legal e não recomendamos a sua visitação por conta própia. Por isso foi batizada como cachoeira do rapel, os primeiros visitantes desciam com equipamento de rapel, cordas etc.  Outra coisa: não beba se está indo para cachoeira. As duas coisas não combinam. No mais, o lugar é lindo e vale a pena conhecer se seguir as normas de segurança. Para chegar até a cachoeira do rapel se passa pela trilha dos pocinhos.
+                <p><span id="saiba-mais"><br>Está é uma belíssima cachoeira. Mas é muito importante avisar que só é possível chegar nela com a ajuda de um guia experiente já que o acesso é difícil na hora de descer as pedras. Uma queda não seria nada legal e não recomendamos a sua visitação por conta própia. Por isso foi batizada como cachoeira do rapel, os primeiros visitantes desciam com equipamento de rapel, cordas etc.  Outra coisa: não beba se está indo para cachoeira. As duas coisas não combinam. No mais, o lugar é lindo e vale a pena conhecer se seguir as normas de segurança. Para chegar até a cachoeira do rapel se passa pela trilha dos pocinhos.
                 São cerca de 500 metros depois da Cachoeira dos Pocinhos. <br><br> <b>Como chegar:</b> Para chegar até os Pocinhos deve-se ir até o final da Rua do Chá, a entrada para a trilha situa-se no final do calçamento(há sinalização). Deve-se seguir a trilha até chegar em um ambiente de campo aberto e a partir daí seguir sempre em frente/direita até chegar próximo ao curso de água. Esta trilha é possível de ser feita sem a necessidade de um guia, entretanto pode ser confusa devido a várias bifurcações ao longo do caminho.</span></p>
             </div>
 
         </div> 
         <details class="detalhe">
             <summary class="sumario">Saiba mais</summary>
-            <p><span id="saiba-mais">Está é uma belíssima cachoeira. Mas é muito importante avisar que só é possível chegar nela com a ajuda de um guia experiente já que o acesso é difícil na hora de descer as pedras. Uma queda não seria nada legal e não recomendamos a sua visitação por conta própia. Por isso foi batizada como cachoeira do rapel, os primeiros visitantes desciam com equipamento de rapel, cordas etc.  Outra coisa: não beba se está indo para cachoeira. As duas coisas não combinam. No mais, o lugar é lindo e vale a pena conhecer se seguir as normas de segurança. Para chegar até a cachoeira do rapel se passa pela trilha dos pocinhos.
+            <p><span id="saiba-mais"><br>Está é uma belíssima cachoeira. Mas é muito importante avisar que só é possível chegar nela com a ajuda de um guia experiente já que o acesso é difícil na hora de descer as pedras. Uma queda não seria nada legal e não recomendamos a sua visitação por conta própia. Por isso foi batizada como cachoeira do rapel, os primeiros visitantes desciam com equipamento de rapel, cordas etc.  Outra coisa: não beba se está indo para cachoeira. As duas coisas não combinam. No mais, o lugar é lindo e vale a pena conhecer se seguir as normas de segurança. Para chegar até a cachoeira do rapel se passa pela trilha dos pocinhos.
                 São cerca de 500 metros depois da Cachoeira dos Pocinhos. <br><br> <b>Como chegar:</b> Para chegar até os Pocinhos deve-se ir até o final da Rua do Chá, a entrada para a trilha situa-se no final do calçamento(há sinalização). Deve-se seguir a trilha até chegar em um ambiente de campo aberto e a partir daí seguir sempre em frente/direita até chegar próximo ao curso de água. Esta trilha é possível de ser feita sem a necessidade de um guia, entretanto pode ser confusa devido a várias bifurcações ao longo do caminho.</span></p>
         </details>
     </div>
@@ -816,7 +845,7 @@ label span:nth-child(3){
             </div>
            
             <div class="trespingos-texto">
-                <p><span id="saiba-mais">Localizada a 5,7 Km do centrinho de Lavras Novas, essa represa pode ser alcançada de diferentes maneiras – a pé, de bicicleta ou de carro. No entanto, boa parte dos visitantes opta por chegar de quadriciclo, dada as condições difíceis da estrada. A paisagem bucólica, assim como a possibilidade de nadar na represa, compensam o deslocamento. Quem visita a represa pode passar antes pela Cachoeira Três Pingos. já que essa está no caminho. Nas imediações está também a Cachoeira dos Namorados. <br><br><b>A pé:</b> o início da caminhada começa após o término da Rua Principal (abaixo da Pousada Kokopelli). Ao todo são 1h30 de caminhada.<br><br><b>De carro:</b> saindo da Igreja Nossa Senhora dos Prazeres, em Lavras Novas, sentido entrada do distrito, virar a primeira rua à esquerda, primeira a esquerda novamente e depois a primeira a direita. Da Igreja, contar cerca de 4 km até chegar no primeiro entroncamento, virar à esquerda e seguir mais 1,7 km. Devido às condições da estrada, é recomendável fazer esse trajeto em veículos 4x4.<br><br>
+                <p><span id="saiba-mais"><br>Localizada a 5,7 Km do centrinho de Lavras Novas, essa represa pode ser alcançada de diferentes maneiras – a pé, de bicicleta ou de carro. No entanto, boa parte dos visitantes opta por chegar de quadriciclo, dada as condições difíceis da estrada. A paisagem bucólica, assim como a possibilidade de nadar na represa, compensam o deslocamento. Quem visita a represa pode passar antes pela Cachoeira Três Pingos. já que essa está no caminho. Nas imediações está também a Cachoeira dos Namorados. <br><br><b>A pé:</b> o início da caminhada começa após o término da Rua Principal (abaixo da Pousada Kokopelli). Ao todo são 1h30 de caminhada.<br><br><b>De carro:</b> saindo da Igreja Nossa Senhora dos Prazeres, em Lavras Novas, sentido entrada do distrito, virar a primeira rua à esquerda, primeira a esquerda novamente e depois a primeira a direita. Da Igreja, contar cerca de 4 km até chegar no primeiro entroncamento, virar à esquerda e seguir mais 1,7 km. Devido às condições da estrada, é recomendável fazer esse trajeto em veículos 4x4.<br><br>
                 - Não é permitida a prática de esportes náuticos.
                 <br>
                 - Não é permitida a prática de esportes náuticos a motor.
@@ -828,7 +857,7 @@ label span:nth-child(3){
         </div>
         <details class="detalhe">
             <summary class="sumario">Saiba mais</summary>
-            <p><span id="saiba-mais">Localizada a 5,7 Km do centrinho de Lavras Novas, essa represa pode ser alcançada de diferentes maneiras – a pé, de bicicleta ou de carro. No entanto, boa parte dos visitantes opta por chegar de quadriciclo, dada as condições difíceis da estrada. A paisagem bucólica, assim como a possibilidade de nadar na represa, compensam o deslocamento. Quem visita a represa pode passar antes pela Cachoeira Três Pingos. já que essa está no caminho. Nas imediações está também a Cachoeira dos Namorados. <br><br><b>A pé:</b> o início da caminhada começa após o término da Rua Principal (abaixo da Pousada Kokopelli). Ao todo são 1h30 de caminhada.<br><br><b>De carro:</b> saindo da Igreja Nossa Senhora dos Prazeres, em Lavras Novas, sentido entrada do distrito, virar a primeira rua à esquerda, primeira a esquerda novamente e depois a primeira a direita. Da Igreja, contar cerca de 4 km até chegar no primeiro entroncamento, virar à esquerda e seguir mais 1,7 km. Devido às condições da estrada, é recomendável fazer esse trajeto em veículos 4x4.<br><br>
+            <p><span id="saiba-mais"><br>Localizada a 5,7 Km do centrinho de Lavras Novas, essa represa pode ser alcançada de diferentes maneiras – a pé, de bicicleta ou de carro. No entanto, boa parte dos visitantes opta por chegar de quadriciclo, dada as condições difíceis da estrada. A paisagem bucólica, assim como a possibilidade de nadar na represa, compensam o deslocamento. Quem visita a represa pode passar antes pela Cachoeira Três Pingos. já que essa está no caminho. Nas imediações está também a Cachoeira dos Namorados. <br><br><b>A pé:</b> o início da caminhada começa após o término da Rua Principal (abaixo da Pousada Kokopelli). Ao todo são 1h30 de caminhada.<br><br><b>De carro:</b> saindo da Igreja Nossa Senhora dos Prazeres, em Lavras Novas, sentido entrada do distrito, virar a primeira rua à esquerda, primeira a esquerda novamente e depois a primeira a direita. Da Igreja, contar cerca de 4 km até chegar no primeiro entroncamento, virar à esquerda e seguir mais 1,7 km. Devido às condições da estrada, é recomendável fazer esse trajeto em veículos 4x4.<br><br>
                 - Não é permitida a prática de esportes náuticos.
                 <br>
                 - Não é permitida a prática de esportes náuticos a motor.
@@ -837,23 +866,98 @@ label span:nth-child(3){
                 </span></p>
         </details>
     </div>
-<!----------------Molde das cachoeiras------------------------------------------------------>
-    <div class="bloco-4">
-        <h1 id="bacia-custodio-2">Nome da Cachoeira</h1>
-       <div class="trespingos-flex">
-           <div  class="border-bacia-custodio">
-               <img id="bacia-img"src="cachoeira.jpg" alt="cachoeira-img">
-           </div>
-            <div class="trespingos-texto">
-                <p><span id="saiba-mais">Texto cachoeira vai aqui(PC)</p>
+
+    <div class="bloco-3">
+        <h1 id="cachu-rapel-2">Cachoeira dos namorados</h1>
+        <div class="trespingos-flex">
+            <div class="border-cachu-rapel">
+                <img id="rapel-img" src=".jpg" alt="foto-cachu">
             </div>
-            <details class="detalhe">
-                <summary class="sumario">Saiba mais</summary>
-                <p>Texto cachoeira vai aqui(Mobile)</p>
-            </details>
+            
+            <div class="trespingos-texto">
+                <p><span id="saiba-mais"><br>A Cachoeira dos Namorados, localizada em Lavras Novas, possui pequenos e rasos poços convidativos para banho. Está cercada pela Mata Atlântica e possui pedras debaixo da queda que propiciam descanso. Essa queda d’água está a 2 Km da Cachoeira Três Pingos e 3,5 Km da Represa do Custódio. <br><br><b>De carro: </b>a partir da Igreja de Nossa Senhora dos Prazeres, em Lavras Novas, percorrer cerca de 4 Km até o primeiro entroncamento, virar à direita e seguir por cerca de mais 1,5 Km. É possível estacionar o carro ao lado da cerca que marca a propriedade particular e a trilha de acesso. Devido às condições da estrada, é recomendável fazer esse trajeto em veículos 4x4. <br><br> <b>A pé: </b>o início da caminhada começa após o término da Rua Principal (abaixo da Pousada Kokopelli); leva-se 1h30 para ir e pelo menos 2h para voltar.</p>
+            </div>
+    
+        </div> 
+        <details class="detalhe">
+            <summary class="sumario">Saiba mais</summary>
+            <p><span id="saiba-mais"><br>A Cachoeira dos Namorados, localizada em Lavras Novas, possui pequenos e rasos poços convidativos para banho. Está cercada pela Mata Atlântica e possui pedras debaixo da queda que propiciam descanso. Essa queda d’água está a 2 Km da Cachoeira Três Pingos e 3,5 Km da Represa do Custódio. <br><br><b>De carro: </b>a partir da Igreja de Nossa Senhora dos Prazeres, em Lavras Novas, percorrer cerca de 4 Km até o primeiro entroncamento, virar à direita e seguir por cerca de mais 1,5 Km. É possível estacionar o carro ao lado da cerca que marca a propriedade particular e a trilha de acesso. Devido às condições da estrada, é recomendável fazer esse trajeto em veículos 4x4. <br><br> <b>A pé: </b>o início da caminhada começa após o término da Rua Principal (abaixo da Pousada Kokopelli); leva-se 1h30 para ir e pelo menos 2h para voltar.</p>
+        </details>
     </div>
-<!------------------------------------------------------------------------------------------>
-     
+
+    <div class="bloco-3">
+        <h1 id="cachu-rapel-2">Cachoeira do pocinho</h1>
+        <div class="trespingos-flex">
+            <div class="border-cachu-rapel">
+                <img id="rapel-img" src=".jpg" alt="foto-cachu">
+            </div>
+            
+            <div class="trespingos-texto">
+                <p><span id="saiba-mais"><br>São dois pocinhos com cascatas, onde é possível mergulhar nas piscinas naturais e se refrescar ou mesmo sentar nas pedras para receber a hidromassagem natural. Existe também outros poços, sem queda e com água cristalina. <br><br> <b>A pé: </b>caminhada de aproximadamente 15 minutos com belas paisagens. Percurso feito por trilhas de fácil acesso. O início da caminhada começa na porteira que fica ao lado da Pousada Palavras Novas. Descer a trilha e virar no 3º poste de madeira à esquerda. Deste ponto em diante são aproximadamente 15 minutos de caminhada. Boa parte do percurso é feito beirando os vários pocinhos que completam um lindo cenário natural.</p>
+            </div>
+    
+        </div> 
+        <details class="detalhe">
+            <summary class="sumario">Saiba mais</summary>
+            <p><span id="saiba-mais"><br>São dois pocinhos com cascatas, onde é possível mergulhar nas piscinas naturais e se refrescar ou mesmo sentar nas pedras para receber a hidromassagem natural. Existe também outros poços, sem queda e com água cristalina. <br><br><b>A pé: </b>caminhada de aproximadamente 15 minutos com belas paisagens. Percurso feito por trilhas de fácil acesso. O início da caminhada começa na porteira que fica ao lado da Pousada Palavras Novas. Descer a trilha e virar no 3º poste de madeira à esquerda. Deste ponto em diante são aproximadamente 15 minutos de caminhada. Boa parte do percurso é feito beirando os vários pocinhos que completam um lindo cenário natural.</p>
+        </details>
+    </div>
+
+    <div class="bloco-3">
+        <h1 id="cachu-rapel-2">Nome da Cachoeira</h1>
+        <div class="trespingos-flex">
+            <div class="border-cachu-rapel">
+                <img id="rapel-img" src=".jpg" alt="foto-cachu">
+            </div>
+            
+            <div class="trespingos-texto">
+                <p><span id="saiba-mais"><br>texto(PC)</p>
+            </div>
+    
+        </div> 
+        <details class="detalhe">
+            <summary class="sumario">Saiba mais</summary>
+            <p><span id="saiba-mais"><br>texto(mobile)</p>
+        </details>
+    </div>
+
+    <div class="bloco-3">
+        <h1 id="cachu-rapel-2">Nome da Cachoeira</h1>
+        <div class="trespingos-flex">
+            <div class="border-cachu-rapel">
+                <img id="rapel-img" src=".jpg" alt="foto-cachu">
+            </div>
+            
+            <div class="trespingos-texto">
+                <p><span id="saiba-mais"><br>texto(PC)</p>
+            </div>
+    
+        </div> 
+        <details class="detalhe">
+            <summary class="sumario">Saiba mais</summary>
+            <p><span id="saiba-mais"><br>texto(mobile)</p>
+        </details>
+    </div>
+
+<!----------------Molde das cachoeiras------------------------------------------------------
+<div class="bloco-3">
+    <h1 id="cachu-rapel-2">Nome da Cachoeira</h1>
+    <div class="trespingos-flex">
+        <div class="border-cachu-rapel">
+            <img id="rapel-img" src=".jpg" alt="foto-cachu">
+        </div>
+        
+        <div class="trespingos-texto">
+            <p><span id="saiba-mais"><br>texto(PC)</p>
+        </div>
+
+    </div> 
+    <details class="detalhe">
+        <summary class="sumario">Saiba mais</summary>
+        <p><span id="saiba-mais"><br>texto(mobile)</p>
+    </details>
+</div>
+-------------------------------------------------------------------------------------------->
         
     </main>
 
