@@ -574,7 +574,7 @@ label span:nth-child(3){
         background: url() linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     }
     .bloco-1{
-        height: 400px;
+        height: 645px;
         background: #054030;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
@@ -612,6 +612,9 @@ label span:nth-child(3){
         width: 250px;
     }
     #rapel-img{
+        width: 250px;
+    }
+    #namorados-img{
         width: 250px;
     }
     #bacia-img{
@@ -690,6 +693,14 @@ label span:nth-child(3){
     padding: 10px;
     text-align: left; 
     }
+    .nav-list{
+        width: 165px;
+        height: 55vh;
+    }
+    #cachu-namorados-2{
+    padding: 10px;
+    text-align: left; 
+    }
     #cachu-rapel-2{
     padding: 10px;
     text-align: left;
@@ -724,6 +735,21 @@ label span:nth-child(3){
 .dicas{
     background:#054030;
 }
+.dicas h1{
+        color: #fff;
+        display: block;
+        text-align: center;
+        padding: 25px;
+}
+.dicas-list{
+    color: #fff;
+    position: relative;
+    text-align: center;
+    white-space: pre-wrap;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    }
 
 .container-teste {
     display: none;
@@ -784,7 +810,11 @@ label span:nth-child(3){
             <li id="cachu-3pingos"><a href="#cachu-3pingos-2">Cachoeira três pingos</a></li>
             <li id="cachu-rapel"><a href="#cachu-rapel-2">Cachoeira do rapel</a></li>
             <li id="bacia-custodio"><a href="#bacia-custodio-2">Bacia do custódio</a></li>
-            <li id="bacia-custodio"><a href="#nome-da-cachoeira-2">Nome da cachoeira</a></li>
+            <li id="bacia-custodio"><a href="#namorados-cachu">Cachoeira dos namorados</a></li>
+            <li id="bacia-custodio"><a href="#cachu-pocinho">Cachoeira do pocinho</a></li>
+            <li id="bacia-custodio"><a href="#cachu-prazeres">Cachoeira dos prazeres</a></li>
+            <li id="bacia-custodio"><a href="#cachu-castelinho">Cachoeira do castelinho</a></li>
+            
 
         </div>
     </div>
@@ -868,10 +898,12 @@ label span:nth-child(3){
     </div>
 
     <div class="bloco-3">
-        <h1 id="cachu-rapel-2">Cachoeira dos namorados</h1>
+        <p id="namorados-cachu">
+            <h1 id="cachu-rapel-2">Cachoeira dos namorados</h1>
+        </p>
         <div class="trespingos-flex">
             <div class="border-cachu-rapel">
-                <img id="rapel-img" src=".jpg" alt="foto-cachu">
+                <img id="namorados-img" src="cachu-namorados.jpg" alt="foto-cachu">
             </div>
             
             <div class="trespingos-texto">
@@ -886,10 +918,12 @@ label span:nth-child(3){
     </div>
 
     <div class="bloco-3">
-        <h1 id="cachu-rapel-2">Cachoeira do pocinho</h1>
+        <p id="cachu-pocinho">
+            <h1 id="cachu-rapel-2">Cachoeira do pocinho</h1>
+        </p>
         <div class="trespingos-flex">
             <div class="border-cachu-rapel">
-                <img id="rapel-img" src=".jpg" alt="foto-cachu">
+                <img id="rapel-img" src="cachu-pocinhos.jpg" alt="foto-cachu">
             </div>
             
             <div class="trespingos-texto">
@@ -904,38 +938,43 @@ label span:nth-child(3){
     </div>
 
     <div class="bloco-3">
-        <h1 id="cachu-rapel-2">Nome da Cachoeira</h1>
+        <p id="cachu-prazeres">
+            <h1 id="cachu-rapel-2">Cachoeira dos prazeres </h1>
+        </p>
         <div class="trespingos-flex">
             <div class="border-cachu-rapel">
                 <img id="rapel-img" src=".jpg" alt="foto-cachu">
             </div>
             
             <div class="trespingos-texto">
-                <p><span id="saiba-mais"><br>texto(PC)</p>
+                <p><span id="saiba-mais"><br>A Cachoeira dos Prazeres tem uma visão privilegiada do Parque Estadual do Itacolomi. Relevo acidentado com desnível considerável e percurso por áreas de campo de altitude e mata atlântica o caminho existe água para hidratação, mas não é aconselhado o consumo das nascentes sem tratamento prévio. Em finais de semana e feriados ter atenção com o trânsito de motos e quadriciclos. <br><br><b>Como ir: </b> Para se chegar à cachoeira recomendamos um Guia local. Pode-se ir pela Represa do Custódio, andando às margens da mesma. Existe um caminho mais curto, mas o acesso é difícil e só com o conhecimento dos GUIAS se consegue chegar até ela.</p>
             </div>
     
         </div> 
         <details class="detalhe">
             <summary class="sumario">Saiba mais</summary>
-            <p><span id="saiba-mais"><br>texto(mobile)</p>
+            <p><span id="saiba-mais"><br>A Cachoeira dos Prazeres tem uma visão privilegiada do Parque Estadual do Itacolomi. Relevo acidentado com desnível considerável e percurso por áreas de campo de altitude e mata atlântica o caminho existe água para hidratação, mas não é aconselhado o consumo das nascentes sem tratamento prévio. Em finais de semana e feriados ter atenção com o trânsito de motos e quadriciclos. <br><br><b>Como ir: </b> Para se chegar à cachoeira recomendamos um Guia local. Pode-se ir pela Represa do Custódio, andando às margens da mesma. Existe um caminho mais curto, mas o acesso é difícil e só com o conhecimento dos GUIAS se consegue chegar até ela</p>
         </details>
     </div>
 
     <div class="bloco-3">
-        <h1 id="cachu-rapel-2">Nome da Cachoeira</h1>
+        <p id="cachu-castelinho">
+            <h1 id="cachu-rapel-2">Cachoeira do castelinho</h1>
+        </p>
+        
         <div class="trespingos-flex">
             <div class="border-cachu-rapel">
-                <img id="rapel-img" src=".jpg" alt="foto-cachu">
+                <img id="rapel-img" src="cachu-castelinho.jpg" alt="foto-cachu">
             </div>
             
             <div class="trespingos-texto">
-                <p><span id="saiba-mais"><br>texto(PC)</p>
+                <p><span id="saiba-mais"><br>Situada a 9 Km de Lavras Novas, no subdistrito da Chapada, é conhecida também como Cachoeira do Castelinho ou da Chapada. A trilha que dá acesso à queda d'água é de grau de dificuldade médio, especialmente em função de alguns trechos bastante íngremes. Dada a boa área no entorno coberta por pedras e o grande poço, é uma ótima opção de lazer pra quem visita o bucólico vilarejo. <br><br><b>De carro: </b> saindo de Lavras Novas sentido Ouro Preto, virar à esquerda no primeiro entroncamento. Deste entroncamento são mais 4km até chegar ao vilarejo da Chapada. O acesso até a cachoeira é ruim, recomenda-se estacionar o carro na vila e seguir a pé.<br><br><b>A pé, bike ou cavalo: </b>recomendável para todos que curtem um belo passeio. As paisagens são maravilhosas, o caminho é de médio acesso e muito agradável. O percurso de pouco mais de 1 Km  dura cerca de 1h na ida e 1h30 na volta, dependendo do ritmo da pessoa. </p>
             </div>
     
         </div> 
         <details class="detalhe">
             <summary class="sumario">Saiba mais</summary>
-            <p><span id="saiba-mais"><br>texto(mobile)</p>
+            <p><span id="saiba-mais"><br>Situada a 9 Km de Lavras Novas, no subdistrito da Chapada, é conhecida também como Cachoeira do Castelinho ou da Chapada. A trilha que dá acesso à queda d'água é de grau de dificuldade médio, especialmente em função de alguns trechos bastante íngremes. Dada a boa área no entorno coberta por pedras e o grande poço, é uma ótima opção de lazer pra quem visita o bucólico vilarejo. <br><br><b>De carro: </b> saindo de Lavras Novas sentido Ouro Preto, virar à esquerda no primeiro entroncamento. Deste entroncamento são mais 4km até chegar ao vilarejo da Chapada. O acesso até a cachoeira é ruim, recomenda-se estacionar o carro na vila e seguir a pé.<br><br><b>A pé, bike ou cavalo: </b>recomendável para todos que curtem um belo passeio. As paisagens são maravilhosas, o caminho é de médio acesso e muito agradável. O percurso de pouco mais de 1 Km  dura cerca de 1h na ida e 1h30 na volta, dependendo do ritmo da pessoa.</p>
         </details>
     </div>
 

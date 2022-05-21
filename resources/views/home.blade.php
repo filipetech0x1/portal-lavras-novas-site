@@ -780,6 +780,7 @@ margin-bottom: 75px;
         width: 215px;
         margin-top: -220px;
     }
+
 }
 #texto-serviicos{
     position: relative;
@@ -836,6 +837,7 @@ margin-bottom: 75px;
     top: -345px;
     left: 50%;
 }
+
 .mapa-div-border{
     border-width: 4px;
     border-style: solid;
@@ -857,6 +859,10 @@ margin-bottom: 75px;
 #mapa-iframe{
     width: 100%;
     height: 400px;
+}
+.nav-list{
+    width: 165px;
+    height: 55vh;
 }
 .mapa-div{
     padding: 5px;
