@@ -729,9 +729,9 @@ width: 190px;
 margin-left: -625px;
 top: -68px;
 }
-        .rodape h3{
-            color:#000000;
-        }
+.rodape h3{
+color:#000000;
+}
         
     #cachu-3pingos-2 {
     padding: 10px;

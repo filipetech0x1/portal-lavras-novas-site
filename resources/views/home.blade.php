@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
 *{
     margin: 0;
@@ -434,7 +434,7 @@ label span:nth-child(3){
     .rodape{
         background: #000000;
         width: 100%;
-        height: 440px;
+        height: 300px;
         
     }
     .rodape li{
@@ -527,10 +527,13 @@ label span:nth-child(3){
         
     }
     .rodape-logo{
-        position: relative;
-        left: 550px;
-        padding: 5px;
-        display: flex;
+    position: relative;
+    display: flex;
+    width: 35%;
+    margin-left: 8%;
+    margin-top: 35px;
+    justify-content: space-between;
+        
         
        
     }
@@ -851,11 +854,53 @@ margin-bottom: 75px;
 .mapa{
     height: 0;
 }
-#mapa-iframe{
-
+#back-to-top {
+text-decoration: none;
+color: white;
+background-color: #0c1d11;
+padding: 10px;
+position: fixed;
+right: 25px;
+bottom: 10px;
+box-shadow: 3px 3px 10px #333;
 }
 }
 @media screen and (max-width: 770px){
+.rodape {
+    background: #000000;
+    width: 100%;
+    height: 300px;
+}
+#text-rod1 {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 10px;
+    top: 25px;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+#desenvolvido-filipe {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    color: rgb(116 116 116);
+    top: 110px;
+    padding: 10px;
+    margin-left: 80px;
+    position: relative;
+}
+#back-to-top {
+text-decoration: none;
+color: white;
+background-color: #0c1d11;
+padding: 10px;
+position: fixed;
+right: 10px;
+bottom: 10px;
+box-shadow: 3px 3px 10px #333;
+}
+
 #mapa-iframe{
     width: 100%;
     height: 400px;
@@ -875,6 +920,11 @@ margin-bottom: 75px;
     height: 0;
     position: relative; 
     display: none;
+}
+#desenvolvido-filipe{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    color: rgb(77, 77, 77);
 }
     </style>
     <link
@@ -919,7 +969,7 @@ margin-bottom: 75px;
             
 
            <div class="fotos-background">
-
+            <p id="fotos-background-id"></p>
             <img class="mySlides" src="foto-background-1.png">
             <img class="mySlides" src="foto-background-2.png">
             <img class="mySlides" src="foto-background-3.png">
@@ -931,7 +981,9 @@ margin-bottom: 75px;
                 <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="button-right" onclick="plusDivs(+1)">&#10095;</button>
            </div>
-           
+
+           <a id="back-to-top" href="#fotos-background-id">&#9650;</a>
+
             <div class="descubra">
 
                 <div class="container-fluid">
@@ -1058,27 +1110,12 @@ margin-bottom: 75px;
        <footer>
         <div class="rodape">
             <h3 id="text-rod1">Portal Lavras Novas</h3>
-            <h4 id="text-rod">Assuntos relacionados ao site:</h4>
-            <ul class="rodape2">
-                <ul class="rodape3">
-                <li id="li-rod">
-                    <a href="mailto:/*emaildoportal*/" target="_blank">
-                        <img id="text-rod2" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="">
-                    </a>
-                </li>
-                <li  id="li-rod">
-                    <a href="https://www.instagram.com/portalavrasnovas/" target="_blank">
-                        <img id="text-rod2" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white
-                        " target="_blank">
-                    </a>
-                </li>
-                </ul>
-                <li><p id="text-rod">Fundador João Pedro Maia - joaopedroartes07@gmail.com <br>Desenvolvido por <a href="https://www.instagram.com/filipetech01/" target="_blank">filipetech01</a> - filipetech01@gmail.com</p></li>
-
-            </ul>
             <div class="rodape-logo">
-                        <img  id="rodape-logo3" src="logo-rodape.png" alt="">
+                <i class="fa fa-instagram" style="font-size:36px; color:white"></i>
+                <i class="fa fa-youtube-play" style="font-size:36px; color:white"></i>
+                <i class="material-icons" style="font-size:36px; color:white">email</i>
             </div>
+            <p id="desenvolvido-filipe">Desenvolvido por filipetech01</p>
        </div> 
          
        </footer>
