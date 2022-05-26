@@ -445,22 +445,9 @@ label span:nth-child(3){
         
         
     }
-    @media screen and (max-width: 770px){
-        #rodape-logo3{
-           
-    width: 190px;
-    margin-left: -625px;
-    top: -68px;
-}
-        }
         
-    }
-    @media screen and (max-width: 770px){
-        .rodape h3{
-            color:#000000;
-        }
-        
-    }
+   
+
     #text-rod{
         color: #fff;
         font-size: 18px;
@@ -574,7 +561,7 @@ label span:nth-child(3){
         background: url() linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     }
     .bloco-1{
-        height: 645px;
+        height: 500px;
         background: #054030;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
@@ -585,21 +572,7 @@ label span:nth-child(3){
         padding: 25px;
 
     }
-    .cachu-list{
-        color: #fff;
-        position: relative;
-        text-align: center;
-        white-space: pre-wrap;
-        font-size: 20px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        padding: 10px;
-    }
-    .cahu-list li{
-        text-align: center;
-        color: #fff;
-        
-        
-    }
+   
     .bloco-2,.bloco-3,.bloco-4{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         background: #2e5739;
@@ -666,6 +639,7 @@ label span:nth-child(3){
         text-rendering: optimizeLegibility;
         line-height: 21px;
     }
+
   
 @media screen and (min-width: 770px){
     #cachu-3pingos-2{
@@ -686,9 +660,79 @@ label span:nth-child(3){
     .detalhe{
         display: none;
     }
+    .bloco-1{
+    height: 200px;
+    padding: 25px;
+    background: #054030;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .cachu-list{
+    color: #fff;
+    position: relative;
+    text-align: center;
+    display: grid;
+    grid-column-gap: 40px;
+    grid-row-gap: 25px;
+    justify-items: center;
+    grid-template-columns: repeat(4,auto);
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    }
+    .cachu-list-debaixo{
+    color: #fff;
+    position: relative;
+    text-align: center;
+    display: grid;
+    grid-row-gap: 25px;
+    margin: 10px;
+    margin-left: 8%;
+    justify-items: center;
+    grid-template-columns: repeat(4,auto);
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    }
+    .cachu-list li{
+        text-align: center;
+        color: #fff;
+    }
+
+#back-to-top {
+text-decoration: none;
+color: white;
+background-color: #0c1d11;
+padding: 10px;
+position: fixed;
+right: 25px;
+bottom: 10px;
+box-shadow: 3px 3px 10px #333;
+}
     
 }
+
 @media screen and (max-width: 770px){
+
+#back-to-top {
+text-decoration: none;
+color: white;
+background-color: #0c1d11;
+padding: 10px;
+position: fixed;
+right: 10px;
+bottom: 10px;
+box-shadow: 3px 3px 10px #333;
+}
+
+#rodape-logo3{         
+width: 190px;
+margin-left: -625px;
+top: -68px;
+}
+        .rodape h3{
+            color:#000000;
+        }
+        
     #cachu-3pingos-2 {
     padding: 10px;
     text-align: left; 
@@ -720,7 +764,7 @@ label span:nth-child(3){
         color: #fff;
         display: block;
         text-align: center;
-        padding: 25px;
+        padding: 15px;
     }
     .dicas-list{
     color: #fff;
@@ -730,6 +774,26 @@ label span:nth-child(3){
     font-size: 20px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 10px;
+    }
+    .cachu-list {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .cachu-list-debaixo {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+    .cachu-list li{
+        text-align: center;
+        color: #fff;
     }
 }
 .dicas{
@@ -754,6 +818,43 @@ label span:nth-child(3){
 .container-teste {
     display: none;
 }
+.butao-foto{
+    display: flex;
+    justify-content: space-between;
+    height: 0;
+}
+.button-right{
+    height: 520px;
+    top: -520px;
+    color: #fff;
+    transition: all .25s ease-in;
+    opacity: 0.6;
+    filter: alpha(opacity=40);
+    position: relative;
+    z-index: 2;
+    background: #fafafa00;
+    border: 0;
+    font-size: 32px;
+    cursor: pointer;
+    padding: 5px;
+}
+.button-left{
+    height: 520px;
+    top: -520px;
+    color: #fff;
+    transition: all .25s ease-in;
+    opacity: 0.6; 
+    filter: alpha(opacity=40);
+    position: relative;
+    z-index: 2;
+    background: #fafafa00;
+    border: 0;
+    font-size: 32px;
+    cursor: pointer;
+    padding: 5px;
+    left: 0;
+}
+
     
     </style>
     <title>Cachoeiras</title>
@@ -797,25 +898,34 @@ label span:nth-child(3){
                 </div>
             
                 <div class="cachu-img">
-                 <img src="cachufalcao.jpg" alt="">
-                    <img src="cachu3pingos.jpg" alt="">
-                    <img src="cachurapel.jpg" alt="">
+                    <img class="mySlides" src="cachu-1.png">
+                    <img class="mySlides" src="cachu-4.png">
+                    <img class="mySlides" src="cachu-2.png">
+                    <img class="mySlides" src="cachu-3.png">
+                    <img class="mySlides" src="cachu-5.png">
+
                 </div>
+
+                <div class="butao-foto">
+                    <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="button-right" onclick="plusDivs(+1)">&#10095;</button>
+               </div>
+
              </div>
         </div>
 
     <div class="bloco-1">
-        <h1>Ir para</h1>
+        <h1 id="ir-para">Ir para</h1>
         <div class="cachu-list">
             <li id="cachu-3pingos"><a href="#cachu-3pingos-2">Cachoeira três pingos</a></li>
             <li id="cachu-rapel"><a href="#cachu-rapel-2">Cachoeira do rapel</a></li>
             <li id="bacia-custodio"><a href="#bacia-custodio-2">Bacia do custódio</a></li>
             <li id="bacia-custodio"><a href="#namorados-cachu">Cachoeira dos namorados</a></li>
+        </div>
+        <div class="cachu-list-debaixo">
             <li id="bacia-custodio"><a href="#cachu-pocinho">Cachoeira do pocinho</a></li>
             <li id="bacia-custodio"><a href="#cachu-prazeres">Cachoeira dos prazeres</a></li>
             <li id="bacia-custodio"><a href="#cachu-castelinho">Cachoeira do castelinho</a></li>
-            
-
         </div>
     </div>
         <div class="dicas">
@@ -830,6 +940,7 @@ label span:nth-child(3){
                 
             </ul>
         </div>
+        <a id="back-to-top" href="#ir-para">&#9650;</a>
     <div class="bloco-2">
         <h1 id="cachu-3pingos-2">Cachoeira três pingos</h1>
         <div class="trespingos-flex">
@@ -943,7 +1054,7 @@ label span:nth-child(3){
         </p>
         <div class="trespingos-flex">
             <div class="border-cachu-rapel">
-                <img id="rapel-img" src=".jpg" alt="foto-cachu">
+                <img id="rapel-img" src="cachu-prazeres.png" alt="foto-cachu">
             </div>
             
             <div class="trespingos-texto">
@@ -999,6 +1110,45 @@ label span:nth-child(3){
 -------------------------------------------------------------------------------------------->
         
     </main>
+    <script>
+        //SlideBotao
+        var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+    showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+    </script>
+
+    <script type="text/javascript">
+    //SlideShow
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel,2500); // Change image every second
+    }
+
+    </script>
 
 
     <script type="text/javascript">
