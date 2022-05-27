@@ -434,7 +434,7 @@ label span:nth-child(3){
     .rodape{
         background: #000000;
         width: 100%;
-        height: 300px;
+        height: 350px;
         
     }
     .rodape li{
@@ -475,19 +475,7 @@ label span:nth-child(3){
     
 
     }
-    #text-rod1{
-        color: #fff;
-        font-size: 18px;
-        line-height: 34px;
-        padding: 5px;
-        top:  155px;
-        position: relative;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-rendering: optimizeLegibility;
-   
-    
 
-    }
     #text-rod2{
         line-height: 34px;
         padding: 1px;
@@ -835,6 +823,27 @@ margin-bottom: 75px;
     background:#f0f0f0;
 }
 @media screen and (min-width: 770px){
+#desenvolvido-filipe {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    color: rgb(116 116 116);
+    top: 20px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+#text-rod1{
+    color: #fff;
+    font-size: 18px;
+    padding: 2% 6% 2% 6%;
+    top: 25px;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-rendering: optimizeLegibility;
+   
+    
+
+}
 .mapa-div{
     position: relative;
     top: -345px;
@@ -864,18 +873,44 @@ right: 25px;
 bottom: 10px;
 box-shadow: 3px 3px 10px #333;
 }
+.rodape-logo {
+    position: relative;
+    display: flex;
+    width: 15%;
+    margin-left: 6%;
+    margin-top: 35px;
+    justify-content: space-between;
+}
+#portal-texto-rod{
+    color: white;
+    padding: 2% 6% 2% 6%;
+    position: relative;
+}
+#portal-texto-rod a{
+    top: 8px;
+}
 }
 @media screen and (max-width: 770px){
+#portal-texto-rod{
+    color: white;
+}
+.rodape-logo {
+    position: relative;
+    display: flex;
+    width: 35%;
+    margin-left: 8%;
+    margin-top: 35px;
+    justify-content: space-between;
+}
 .rodape {
     background: #000000;
     width: 100%;
-    height: 300px;
+    height: 350px;
 }
 #text-rod1 {
     color: #fff;
     font-size: 18px;
-    margin-left: 20px;
-    padding: 10px;
+    padding: 2% 6% 2% 6%;
     top: 25px;
     position: relative;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -885,9 +920,9 @@ box-shadow: 3px 3px 10px #333;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
     color: rgb(116 116 116);
-    top: 110px;
-    padding: 10px;
-    margin-left: 80px;
+    top: 20px;
+    padding: 2% 6% 2% 6%;
+    text-align: center;
     position: relative;
 }
 #back-to-top {
@@ -1110,11 +1145,17 @@ box-shadow: 3px 3px 10px #333;
        <footer>
         <div class="rodape">
             <h3 id="text-rod1">Portal Lavras Novas</h3>
+            <div id="portal-texto-rod">
+                <a href="">Quem somos nós</a>
+                <a href=""></a>
+            </div>
             <div class="rodape-logo">
                 <i class="fa fa-instagram" style="font-size:36px; color:white"></i>
                 <i class="fa fa-youtube-play" style="font-size:36px; color:white"></i>
                 <i class="material-icons" style="font-size:36px; color:white">email</i>
             </div>
+            
+            <p id="portal-texto-rod">O portal Lavras Novas tem o objetivo de mostrar Lavras Novas de uma forma diferente. Transmitir para quem nunca foi ou que já foi e admira Lavras Novas, transmitir essa energia e essa vibe única que Lavras Novas tem. Tudo isso de uma forma moderna, profissional e acessível para todos.</p>
             <p id="desenvolvido-filipe">Desenvolvido por filipetech01</p>
        </div> 
          
