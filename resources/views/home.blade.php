@@ -44,6 +44,7 @@ nav{
 }
 html{
     overflow-y: hidden;
+    scroll-behavior: smooth;
 }
 main{
     overflow-y: scroll;
@@ -434,7 +435,7 @@ label span:nth-child(3){
     .rodape{
         background: #000000;
         width: 100%;
-        height: 350px;
+        height: 500px;
         
     }
     .rodape li{
@@ -515,15 +516,15 @@ label span:nth-child(3){
         
     }
     .rodape-logo{
-    position: relative;
     display: flex;
-    width: 35%;
-    margin-left: 8%;
-    margin-top: 35px;
-    justify-content: space-between;
-        
-        
-       
+    justify-content: center;
+    align-items: center;
+    /* height: 10%; */
+    margin-top: 13%;
+    margin-left: 44%;
+    /* position: relative; */
+    width: 12vw;
+    justify-content: space-around;
     }
     .rodape-logo2 li{
         list-style: none;
@@ -823,6 +824,33 @@ margin-bottom: 75px;
     background:#f0f0f0;
 }
 @media screen and (min-width: 770px){
+.portal-texto-rod-2{
+    margin-left: 55%;
+    padding: 2% 6% 2% 6%;
+    right: 27%;
+    position: relative;
+    color: white;
+}    
+#portal-texto-rod-p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-rendering: optimizeLegibility;
+    text-align: center;
+}    
+.rodape-desenvolvido-filipe{
+    margin-top: -2%;
+    position: relative;
+    text-align: center;
+}
+.rodape-logo-transparente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+#logo-rodape{
+    width: 20%;
+    margin-top: 150px;
+}
 #desenvolvido-filipe {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
@@ -874,38 +902,72 @@ bottom: 10px;
 box-shadow: 3px 3px 10px #333;
 }
 .rodape-logo {
-    position: relative;
+
     display: flex;
-    width: 15%;
-    margin-left: 6%;
-    margin-top: 35px;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    /* height: 10%; */
+    margin-top: 13%;
+    margin-left: 44%;
+    /* position: relative; */
+    width: 12vw;
+    justify-content: space-around;
+        
 }
 #portal-texto-rod{
     color: white;
-    padding: 2% 6% 2% 6%;
-    position: relative;
+    margin-top: 23%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-rendering: optimizeLegibility;
+
 }
 #portal-texto-rod a{
     top: 8px;
 }
 }
 @media screen and (max-width: 770px){
+#portal-texto-rod-p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-rendering: optimizeLegibility;
+    text-align: center;
+}    
+.portal-texto-rod-2{
+    color: white;
+    margin-left: 55%;
+    padding: 2% 6% 2% 6%;
+    right: 27%;
+    position: relative;
+}    
+.rodape-logo-transparente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+#logo-rodape{
+
+}
 #portal-texto-rod{
     color: white;
+    margin-top: 23%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-rendering: optimizeLegibility;
 }
 .rodape-logo {
-    position: relative;
     display: flex;
-    width: 35%;
-    margin-left: 8%;
-    margin-top: 35px;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    /* height: 10%; */
+    margin-top: 13%;
+    margin-left: 44%;
+    /* position: relative; */
+    width: 12vw;
+    justify-content: space-around;
 }
 .rodape {
     background: #000000;
     width: 100%;
-    height: 350px;
+    height: 500px;
 }
 #text-rod1 {
     color: #fff;
@@ -961,6 +1023,8 @@ box-shadow: 3px 3px 10px #333;
     font-size: 15px;
     color: rgb(77, 77, 77);
 }
+
+
     </style>
     <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
@@ -969,7 +1033,7 @@ box-shadow: 3px 3px 10px #333;
     <title>Portal Lavras Novas</title>
 </head>
 <body>
-
+    
     <header>
             <nav>
         
@@ -1001,7 +1065,6 @@ box-shadow: 3px 3px 10px #333;
         </header>
 
     <main>
-            
 
            <div class="fotos-background">
             <p id="fotos-background-id"></p>
@@ -1016,8 +1079,6 @@ box-shadow: 3px 3px 10px #333;
                 <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="button-right" onclick="plusDivs(+1)">&#10095;</button>
            </div>
-
-           <a id="back-to-top" href="#fotos-background-id">&#9650;</a>
 
             <div class="descubra">
 
@@ -1047,7 +1108,7 @@ box-shadow: 3px 3px 10px #333;
                     </div>
                  </div>
             </div>
-
+           
             <div class="mapa">
                 <div class="mapa-div">
                     <div class="mapa-div-border">
@@ -1055,7 +1116,6 @@ box-shadow: 3px 3px 10px #333;
                     </div>
                 </div>
             </div>
-            <i id="icone-i" style="font-size:24px" class="fa">&#xf05a;</i>
             <div class="card-paginas">
                 
                     <ul class="serv-encontra">
@@ -1102,7 +1162,9 @@ box-shadow: 3px 3px 10px #333;
               <div class="historia">
                 <p id="apresentacao">Lavras Novas distrito de Ouro Preto - MG e a 120 km da capital mineira Belo Horizonte possui casas antigas e coloridas, igrejas coloniais e restaurantes. Cercada de montanhas com uma vegetação incrível que dão um charme especial. <br>Lavras Novas é um lugar muito gostoso e acolhedor com seus visitantes, de culinária local e muita história envolvida em todos os cantos e detalhes. Lugar de natureza exuberante, de pessoas hospitaleiras, daquele jeito que faz qualquer  um se sentir em casa!<br>Você pode fazer passeio off-road, caminhar na natureza, renovar as energias em suas cachoeiras maravilhosas. Você pode escutar uma boa música ao vivo tomando uma cervejinha e comendo uma comida típica no gramado dos bares.<br>Lavras Novas tem opções para todos os gostos!</p>
             </div>
-            
+
+           
+
               <div class="lavras-hoje">
                 <h2 id="title-lavras-hoje">Serviços em Lavras Novas</h2>
 
@@ -1144,27 +1206,36 @@ box-shadow: 3px 3px 10px #333;
     </div>
        <footer>
         <div class="rodape">
-            <h3 id="text-rod1">Portal Lavras Novas</h3>
-            <div id="portal-texto-rod">
-                <a href="">Quem somos nós</a>
+        <div class="rodape-logo-transparente">
+            <img id="logo-rodape" src="logo-transparente.png" alt="">
+        </div>
+            
+            <!--<h3 id="text-rod1">Portal Lavras Novas</h3>-->
+            <div class="rodape-logo-transparente">
+                <a id="portal-texto-rod" href="">Quem somos nós</a>
                 <a href=""></a>
             </div>
             <div class="rodape-logo">
-                <i class="fa fa-instagram" style="font-size:36px; color:white"></i>
-                <i class="fa fa-youtube-play" style="font-size:36px; color:white"></i>
-                <i class="material-icons" style="font-size:36px; color:white">email</i>
+               <a href="https://www.instagram.com/portalavrasnovas/" target="_blank"><i class="fa fa-instagram" style="font-size:36px; color:white"></i></a>
+               <a href="https://youtube.com/channel/UCh5cTvDuy9_9K9lD_9Vuszw" target="_blank"><i class="fa fa-youtube-play" style="font-size:36px; color:white"></i></a>
+               <a href="mailto:portalavrasnovas@gmail.com" target="_blank"><i class="material-icons" style="font-size:36px; color:white">email</i></a>
             </div>
-            
-            <p id="portal-texto-rod">O portal Lavras Novas tem o objetivo de mostrar Lavras Novas de uma forma diferente. Transmitir para quem nunca foi ou que já foi e admira Lavras Novas, transmitir essa energia e essa vibe única que Lavras Novas tem. Tudo isso de uma forma moderna, profissional e acessível para todos.</p>
-            <p id="desenvolvido-filipe">Desenvolvido por filipetech01</p>
+            <div class="portal-texto-rod-2">
+                <p id="portal-texto-rod-p">O portal Lavras Novas tem o objetivo de mostrar Lavras Novas de uma forma diferente. Transmitir para quem nunca foi ou que já foi e admira Lavras Novas, transmitir essa energia e essa vibe única que Lavras Novas tem. Tudo isso de uma forma moderna, profissional e acessível para todos.</p>
+            </div>
+        <div class="rodape-desenvolvido-filipe">
+            <p id="desenvolvido-filipe">Desenvolvido por <a href="https://www.instagram.com/filipetech01/" target="_blank" style="color: rgb(77, 77, 77);">filipetech01</a></p>
+        </div>
        </div> 
          
        </footer>
          
-    
             
     </main>
-
+<script>
+    
+  
+</script>
     <script>
         //SlideBotao
         var slideIndex = 1;
@@ -1206,8 +1277,13 @@ box-shadow: 3px 3px 10px #333;
     </script>
 
     <script type="text/javascript">
+    
+    function navToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
         
-        function navToCachu() {
+    }
+    function navToCachu() {
     window.location.href = "{{ route('cachoeiras')}}";
     }
 
