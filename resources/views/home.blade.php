@@ -933,9 +933,10 @@ box-shadow: 3px 3px 10px #333;
 }    
 .portal-texto-rod-2{
     color: white;
-    margin-left: 55%;
-    padding: 2% 6% 2% 6%;
-    right: 27%;
+    margin-left: 15%;
+    margin-top: 1%;
+    padding: 3% 4%;
+    right: 8%;
     position: relative;
 }    
 .rodape-logo-transparente{
@@ -945,11 +946,12 @@ box-shadow: 3px 3px 10px #333;
     height: 10%;
 }
 #logo-rodape{
-
+    width: 70%;
+    margin-top: 150px;
 }
 #portal-texto-rod{
     color: white;
-    margin-top: 23%;
+    margin-top: 56%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-rendering: optimizeLegibility;
 }
@@ -957,12 +959,11 @@ box-shadow: 3px 3px 10px #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 10%; */
-    margin-top: 13%;
-    margin-left: 44%;
-    /* position: relative; */
+    margin-top: 27%;
     width: 12vw;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
 }
 .rodape {
     background: #000000;
