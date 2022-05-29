@@ -951,24 +951,21 @@ box-shadow: 3px 3px 10px #333;
 }
 #portal-texto-rod{
     color: white;
-    margin-top: 56%;
+    margin-top: 65%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-rendering: optimizeLegibility;
 }
 .rodape-logo {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 27%;
-    width: 12vw;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
+    justify-content: space-around;
+    margin-top: 36%;
+    margin-left: 29%;
+    width: 45vw;
 }
 .rodape {
     background: #000000;
     width: 100%;
-    height: 500px;
+    height: 570px;
 }
 #text-rod1 {
     color: #fff;
