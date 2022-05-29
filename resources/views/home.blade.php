@@ -965,7 +965,7 @@ box-shadow: 3px 3px 10px #333;
 .rodape {
     background: #000000;
     width: 100%;
-    height: 570px;
+    height: 590px;
 }
 #text-rod1 {
     color: #fff;
